@@ -1,13 +1,14 @@
 {
-  "name": "with-tailwindcss",
+  "name": "ezcreatives",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "env TAILWIND_MODE=watch NODE_ENV=development next dev",
     "build": "next build",
     "start": "next start"
   },
   "dependencies": {
+    "html2canvas": "^1.0.0-rc.7",
     "next": "latest",
     "react": "^17.0.1",
     "react-dom": "^17.0.1"

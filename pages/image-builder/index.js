@@ -1,4 +1,4 @@
-import DesignImage from "../components/html-to-images";
+import DesignImage from "../../components/html-to-images";
 
 const ImageBuilder = () => {
   return (

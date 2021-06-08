@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from "next/link";
 
 export default function Home() {
   const faviconEmoji = "🎨";
@@ -18,6 +19,13 @@ export default function Home() {
             ez <span className="text-cyan-500 uppercase">CREATIVES</span>
           </p>
           <p className="mt-1 text-gray-700">automate your creatives</p>
+          <p className="mt-8">
+            <Link href="/image-builder">
+              <button className="bg-cyan-300 p-2 capitalize">
+                Goto Image builder
+              </button>
+            </Link>
+          </p>
         </div>
       </div>
     </>

@@ -9,7 +9,11 @@ const DesignImage = () => {
 
   function exportFiles() {
     console.log("let the download begin!");
+    // @todo: while images are being exported - show animation.
+
     elementRef.current.forEach((e, i) => {
+      // for quality purpose: transform before download
+      e.style.transform = "scale(3)";
       downloadFiles(e, `creative_${i}`);
     });
   }
@@ -18,9 +22,13 @@ const DesignImage = () => {
     html2canvas(element, {
       useCORS: true,
     }).then(function (canvas) {
-      var imageURL = canvas.toDataURL("image/jpeg", 1);
+      // remove transformation as the desired html has be converted into canvas.
+      element.style.transform = "none";
+
+      let imageData = canvas.toDataURL("image/jpeg", 1.0);
+
       let a = document.createElement("a");
-      a.href = imageURL;
+      a.href = imageData;
       a.download = filename;
       a.click();
       console.log("downloading", filename);

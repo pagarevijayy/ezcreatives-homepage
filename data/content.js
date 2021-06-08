@@ -80,14 +80,6 @@ export const WETHESAPIENS = {
       visible: false,
     },
     {
-      author: "John D. Rockefeller",
-      image:
-        "https://pbs.twimg.com/media/EwSgzmmVgAoJEtL?format=jpg&name=360x360",
-      quote: `"A friendship founded on business is better than a business founded on friendship."`,
-      viewSecondaryContent: `He is widely considered the wealthiest American of all time and the richest person in modern history. `,
-      visible: false,
-    },
-    {
       author: "Henry David Thoreau",
       image:
         "https://pbs.twimg.com/media/Ev20XyaU8AEf4Kx?format=jpg&name=small",

@@ -1,8 +1,8 @@
 #### Context
 
 - [x] Create separate design templates file (constants and route)
-- [ ] Create separate data/content file (sets:quotes, author, caption)
-- [ ] Function: For loop on the content file to create design (randomize combination)
+- [x] Create separate data/content file (sets:quotes, author, caption)
+- [x] Function: For loop on the content file to create design
 - [ ] Button export all (jpg)
 
 #### Backlog

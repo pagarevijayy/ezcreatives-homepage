@@ -1,5 +1,6 @@
 import { useRef } from "react";
-import html2canvas from "html2canvas";
+import * as htmlToImage from "html-to-image";
+
 import { TextUpImageDown } from "../lib/design-templates/classic-designs";
 import { WETHESAPIENS } from "../data/content";
 
@@ -9,26 +10,16 @@ const DesignImage = () => {
 
   function exportFiles() {
     console.log("let the download begin!");
-    // @todo: while images are being exported - show animation.
 
     elementRef.current.forEach((e, i) => {
-      // for quality purpose: transform before download
-      e.style.transform = "scale(3)";
       downloadFiles(e, `creative_${i}`);
     });
   }
 
   const downloadFiles = (element, filename) => {
-    html2canvas(element, {
-      useCORS: true,
-    }).then(function (canvas) {
-      // remove transformation as the desired html has be converted into canvas.
-      element.style.transform = "none";
-
-      let imageData = canvas.toDataURL("image/jpeg", 1.0);
-
+    htmlToImage.toPng(element).then(function (dataUrl) {
       let a = document.createElement("a");
-      a.href = imageData;
+      a.href = dataUrl;
       a.download = filename;
       a.click();
       console.log("downloading", filename);

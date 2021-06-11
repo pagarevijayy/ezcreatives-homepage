@@ -9,15 +9,13 @@
 - Privacy: We never store your on our servers
 - Request for custom template (I create templates for now, later user generated.)
 - Free trial: 30 images on pre-defined templates
-- Pricing: 
-  - Basic:  $25/mo ($250/yr) [limits: ]
-  - Pro:  $65/mo ($650/yr) [limits: ]
+- Pricing:
+  - Basic: $25/mo ($250/yr) [limits: ]
+  - Pro: $65/mo ($650/yr) [limits: ]
   - Enterprise: $165/mo ($1650/yr) [limits: ]
   - Contact us for custom plans
 
 ---
-
-
 
 #### Limitations (v1)
 
@@ -80,14 +78,21 @@ Take away
 3. interesting: tweet to insta image
 4. uses canvas (this kinda stuff is achieved either using canvas or svg!)
 
-
-
-
 #### TO DO
 
 <!-- landing page: Pitch, Demo, Templates, Pricing, Blog, Get Access. -->
 
-- [ ] Landing Page 
 - [ ] Design templates
-- [ ] Dashboard UX  
+- [ ] Dashboard UX
 - [ ] Blog
+
+---
+
+- [ ] Landing Page
+
+  - [x] hero section
+  - [ ] landing page images
+
+- [ ] design templates (x10)
+- [ ] dashboard design
+- [ ] continue landing page...

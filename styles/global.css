@@ -6,3 +6,9 @@
 @tailwind components;
 
 @tailwind utilities;
+
+@media (max-width: 768px) {
+  .zoom-out-75 {
+    zoom: 0.75;
+  }
+}

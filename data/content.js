@@ -146,72 +146,72 @@ export const WETHESAPIENS = {
         "Michael Faraday FRS was an English scientist who contributed to the study of electromagnetism and electrochemistry.",
       visible: false,
     },
-    {
-      author: "Michael Faraday",
-      image:
-        "https://pbs.twimg.com/media/ExGzBl_UUAA3qIS?format=jpg&name=medium",
-      quote: `"No matter what you look at, if you look at it closely enough, you are involved in the entire universe."`,
-      viewSecondaryContent:
-        "Michael Faraday FRS was an English scientist who contributed to the study of electromagnetism and electrochemistry.",
-      visible: false,
-    },
-    {
-      author: "George Carlin",
-      image:
-        "https://pbs.twimg.com/media/EyCLlQfVEAARujy?format=jpg&name=small",
-      quote: `"The reason I talk to myself is because I’m the only one whose answers I accept."`,
-      viewSecondaryContent: `Regarded as one of the most important and influential stand-up comics of all time, he was dubbed "the dean of counterculture comedians".`,
-      visible: false,
-    },
-    {
-      author: "Jiddu Krishnamurti",
-      image:
-        "https://pbs.twimg.com/media/ExGjSOHUYAYBUv7?format=jpg&name=small",
-      quote: `"Tradition becomes our security, and when the mind is secure it is in decay." `,
-      viewSecondaryContent:
-        "Jiddu Krishnamurti was a philosopher, speaker and writer. In his early life, he was groomed to be the new World Teacher, but later rejected this mantle and withdrew from the Theosophy organization behind it.",
-      visible: false,
-    },
-    {
-      author: "Henry Thoreau",
-      image:
-        "https://pbs.twimg.com/media/Ev20XyaU8AEf4Kx?format=jpg&name=small",
-      quote: `"The question is not what you look at, but what you see."`,
-      viewSecondaryContent: `A leading transcendentalist, he is best known for his book Walden, a reflection upon simple living in natural surroundings, and his essay "Civil Disobedience", an argument for disobedience to an unjust state.`,
-      visible: false,
-    },
-    {
-      author: "Karl Popper",
-      image:
-        "https://pbs.twimg.com/media/Evn1TgKVEAESCR8?format=jpg&name=small",
-      quote: `"True ignorance is not the absence of knowledge, but the refusal to acquire it."`,
-      viewSecondaryContent: `One of the 20th century's most influential philosophers of science, Popper is known for his rejection of the classical inductivist views on the scientific method in favour of empirical falsification.`,
-      visible: false,
-    },
-    {
-      author: "Henry Ford",
-      image:
-        "https://pbs.twimg.com/media/EvYLIZfUcAMGaKw?format=jpg&name=small",
-      quote: `	
-"If I had asked people what they wanted, they would have said faster horses."`,
-      viewSecondaryContent: `Henry Ford was an American industrialist and business magnate, founder of the Ford Motor Company.`,
-      visible: false,
-    },
-    {
-      author: "George Orwell",
-      image:
-        "https://pbs.twimg.com/media/EvJL-q-UcAAew4g?format=jpg&name=small",
-      quote: `"Who controls the past controls the future. Who controls the present controls the past."`,
-      viewSecondaryContent: `His work is characterised by lucid prose, biting social criticism, opposition to totalitarianism, and outspoken support of democratic socialism.`,
-      visible: false,
-    },
-    {
-      author: "Arthur Schopenhauer",
-      image:
-        "https://pbs.twimg.com/media/EuSIVUUUUAMGKxp?format=jpg&name=small",
-      quote: `"It is difficult to find happiness within oneself, but it is impossible to find it anywhere else."`,
-      viewSecondaryContent: `Arthur Schopenhauer was a German philosopher. He is best known for his 1818 work The World as Will and Representation, which characterizes the phenomenal world as the product of a blind and insatiable noumenal will.`,
-      visible: false,
-    },
+    // {
+    //   author: "Michael Faraday",
+    //   image:
+    //     "https://pbs.twimg.com/media/ExGzBl_UUAA3qIS?format=jpg&name=medium",
+    //   quote: `"No matter what you look at, if you look at it closely enough, you are involved in the entire universe."`,
+    //   viewSecondaryContent:
+    //     "Michael Faraday FRS was an English scientist who contributed to the study of electromagnetism and electrochemistry.",
+    //   visible: false,
+    // },
+    // {
+    //   author: "George Carlin",
+    //   image:
+    //     "https://pbs.twimg.com/media/EyCLlQfVEAARujy?format=jpg&name=small",
+    //   quote: `"The reason I talk to myself is because I’m the only one whose answers I accept."`,
+    //   viewSecondaryContent: `Regarded as one of the most important and influential stand-up comics of all time, he was dubbed "the dean of counterculture comedians".`,
+    //   visible: false,
+    // },
+    //     {
+    //       author: "Jiddu Krishnamurti",
+    //       image:
+    //         "https://pbs.twimg.com/media/ExGjSOHUYAYBUv7?format=jpg&name=small",
+    //       quote: `"Tradition becomes our security, and when the mind is secure it is in decay." `,
+    //       viewSecondaryContent:
+    //         "Jiddu Krishnamurti was a philosopher, speaker and writer. In his early life, he was groomed to be the new World Teacher, but later rejected this mantle and withdrew from the Theosophy organization behind it.",
+    //       visible: false,
+    //     },
+    //     {
+    //       author: "Henry Thoreau",
+    //       image:
+    //         "https://pbs.twimg.com/media/Ev20XyaU8AEf4Kx?format=jpg&name=small",
+    //       quote: `"The question is not what you look at, but what you see."`,
+    //       viewSecondaryContent: `A leading transcendentalist, he is best known for his book Walden, a reflection upon simple living in natural surroundings, and his essay "Civil Disobedience", an argument for disobedience to an unjust state.`,
+    //       visible: false,
+    //     },
+    //     {
+    //       author: "Karl Popper",
+    //       image:
+    //         "https://pbs.twimg.com/media/Evn1TgKVEAESCR8?format=jpg&name=small",
+    //       quote: `"True ignorance is not the absence of knowledge, but the refusal to acquire it."`,
+    //       viewSecondaryContent: `One of the 20th century's most influential philosophers of science, Popper is known for his rejection of the classical inductivist views on the scientific method in favour of empirical falsification.`,
+    //       visible: false,
+    //     },
+    //     {
+    //       author: "Henry Ford",
+    //       image:
+    //         "https://pbs.twimg.com/media/EvYLIZfUcAMGaKw?format=jpg&name=small",
+    //       quote: `
+    // "If I had asked people what they wanted, they would have said faster horses."`,
+    //       viewSecondaryContent: `Henry Ford was an American industrialist and business magnate, founder of the Ford Motor Company.`,
+    //       visible: false,
+    //     },
+    //     {
+    //       author: "George Orwell",
+    //       image:
+    //         "https://pbs.twimg.com/media/EvJL-q-UcAAew4g?format=jpg&name=small",
+    //       quote: `"Who controls the past controls the future. Who controls the present controls the past."`,
+    //       viewSecondaryContent: `His work is characterised by lucid prose, biting social criticism, opposition to totalitarianism, and outspoken support of democratic socialism.`,
+    //       visible: false,
+    //     },
+    //     {
+    //       author: "Arthur Schopenhauer",
+    //       image:
+    //         "https://pbs.twimg.com/media/EuSIVUUUUAMGKxp?format=jpg&name=small",
+    //       quote: `"It is difficult to find happiness within oneself, but it is impossible to find it anywhere else."`,
+    //       viewSecondaryContent: `Arthur Schopenhauer was a German philosopher. He is best known for his 1818 work The World as Will and Representation, which characterizes the phenomenal world as the product of a blind and insatiable noumenal will.`,
+    //       visible: false,
+    //     },
   ],
 };

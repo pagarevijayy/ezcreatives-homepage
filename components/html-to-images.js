@@ -1,20 +1,22 @@
 import { useRef } from "react";
 import * as htmlToImage from "html-to-image";
 
-import {
-  ClassicQuote,
-  InstaPost,
-} from "../lib/design-templates/classic-designs";
+import { Wisdom0, Wisdom1 } from "../lib/design-templates/classic-designs";
 
 import Container from "../layouts/container";
 import { WETHESAPIENS } from "../data/content";
 
 const DesignImage = () => {
   const elementRef = useRef([]);
+  const wisdom = useRef([]);
+
   elementRef.current = [];
 
   function exportFiles() {
     console.log("let the download begin!");
+
+    // downloadFiles(wisdom.current, `creative_n`);
+    // downloadFiles(elementRef.current[0], `creative_`);
 
     elementRef.current.forEach((e, i) => {
       downloadFiles(e, `creative_${i}`);
@@ -60,13 +62,23 @@ const DesignImage = () => {
           feature can be used to inject malicious files.)
         </p> */}
         </div>
+
         <div className="mx-auto pb-8">
           <div className="flex flex-wrap gap-6">
+            {/* <div ref={wisdom}>
+              <Wisdom1
+                quote="You know, there are two good things in life, freedom of thought and freedom of action."
+                author="Bertrand Russell"
+                imageURL="https://pbs.twimg.com/media/E3tKe1kVEAI2L45.jpg"
+                socialHandle="The Philosophy Quote"
+                mainContentPadding="px-8"
+              />
+            </div> */}
             {WETHESAPIENS.contentArray.map((post, index) => {
               return (
-                <div className="mx-auto zoom-out-75">
-                  <div key={`post_${index}`} ref={addToElementRef}>
-                    <ClassicQuote
+                <div key={`post_${index}`} className="mx-auto zoom-out-75">
+                  <div ref={addToElementRef}>
+                    <Wisdom0
                       quote={post.quote}
                       author={post.author}
                       imageURL={post.image}

@@ -50,3 +50,7 @@
 - [ ] design templates (x10)
 - [ ] dashboard design
 - [ ] continue landing page...
+
+- [] templates
+  - [x] social dimensions
+  - [ ] squarish 5

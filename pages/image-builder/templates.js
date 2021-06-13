@@ -3,6 +3,7 @@ import {
   Wisdom1,
   Wisdom2,
   Wisdom3,
+  SquareTwitter,
 } from "../../lib/design-templates/classic-designs";
 import Container from "../../layouts/container";
 
@@ -41,6 +42,12 @@ const templates = () => {
             quote="If you want to be great, walk the rope without a boss and without a net."
             author="Naval"
             imageURL="https://pbs.twimg.com/profile_images/1256841238298292232/ycqwaMI2_400x400.jpg"
+            mainContentPadding="px-0"
+          />
+          <SquareTwitter
+            quote="Something I told 9 yo: If you're a maker, resist being told what to do by people who aren't."
+            author="Paul Graham"
+            imageURL="https://pbs.twimg.com/profile_images/1824002576/pg-railsconf_400x400.jpg"
             mainContentPadding="px-0"
           />
         </div>

@@ -11,17 +11,17 @@
 - Free trial: 15 images per month based on limited templates.
 - Pricing:
   - Basic: $25/mo ($250/yr) [limits: 1,000 images, setup + basic support]
-  - Pro: $65/mo ($650/yr) [limits: 10,000 images, setup + premium support ]
-  - Business: $165/mo ($1650/yr) [limits: 50,000 images, setup + advanced support]
+  - Pro: $65/mo ($650/yr) [limits: 10,000 images, special templates , setup + premium support ]
+  - Business: $165/mo ($1650/yr) [limits: 50,000 images, special + 5 custom templates , setup + advanced support]
   - Contact us for custom plans
 
 ---
 
 #### Limitations (v1)
 
-- [ ] strict image dimensions (crop before feeding)
-- [ ] cover for the image scaling hack
-- [ ] we create template for the user
+- [ ] strict image dimensions (client needs to follow guidelines)
+- [ ] no customizability on ui
+- [ ] batch process friendly
 - [ ] template dimensions
   - [ ] width: 1080px
   - [ ] squarish - 1:1
@@ -29,11 +29,7 @@
   - [ ] cover and thumbnails - 16:9
   - [ ] verticalish - 2:3
 
-#### Template dimensions
+#### Templates
 
-- Squarish: 1080x1080 [w:1080, h:950-1100 ] (covers: insta, fb, twitter, linkedin, pinterest)
-- Horizontalish: 1080x566 [w:1080 ]
-
-#### Technical
-
-- quality issue is resolved using pixel ratio (keeping the design visually intact, dimension\*pixel ratio)
+- designs: 21 templates
+- dimensions: landscape, sqaure, potrait

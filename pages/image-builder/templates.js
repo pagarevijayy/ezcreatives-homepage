@@ -5,6 +5,7 @@ import {
   Wisdom3,
   Wisdom4,
   SquareTwitter,
+  SquareQuote,
 } from "../../lib/design-templates/classic-designs";
 import Container from "../../layouts/container";
 
@@ -57,6 +58,15 @@ const templates = () => {
             author="Sun Tzu"
             imageURL="https://pbs.twimg.com/media/Eu-1XoxUcAMhhsb.jpg"
           />
+          <div className="shadow-lg">
+            <SquareQuote
+              quote="Something I told 9 yo: If you're a maker, resist being told what to do by people who aren't."
+              author="Paul Graham"
+              socialHandle="Founder, Y Combinator"
+              imageURL="https://pbs.twimg.com/profile_images/1824002576/pg-railsconf_400x400.jpg"
+              mainContentTextSize="text-2xl"
+            />
+          </div>
         </div>
       </Container>
     </div>

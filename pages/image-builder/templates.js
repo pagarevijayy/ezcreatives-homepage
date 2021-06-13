@@ -3,6 +3,7 @@ import {
   Wisdom1,
   Wisdom2,
   Wisdom3,
+  Wisdom4,
   SquareTwitter,
 } from "../../lib/design-templates/classic-designs";
 import Container from "../../layouts/container";
@@ -47,8 +48,14 @@ const templates = () => {
           <SquareTwitter
             quote="Something I told 9 yo: If you're a maker, resist being told what to do by people who aren't."
             author="Paul Graham"
+            socialHandle="@paulg"
             imageURL="https://pbs.twimg.com/profile_images/1824002576/pg-railsconf_400x400.jpg"
             mainContentPadding="px-0"
+          />
+          <Wisdom4
+            quote="Victorious warriors win first and then go to war, while defeated warriors go to war first and then seek to win."
+            author="Sun Tzu"
+            imageURL="https://pbs.twimg.com/media/Eu-1XoxUcAMhhsb.jpg"
           />
         </div>
       </Container>

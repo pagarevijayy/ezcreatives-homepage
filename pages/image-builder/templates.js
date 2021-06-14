@@ -8,6 +8,7 @@ import {
   SquareQuote,
   ThumbnailYT1,
   ThumbnailYT2,
+  ThumbnailYT3,
 } from "../../lib/design-templates/classic-designs";
 import Container from "../../layouts/container";
 
@@ -81,6 +82,13 @@ const templates = () => {
               quote="Total Core Workout"
               subQuote="20 mins challenge"
               imageURL="https://images.unsplash.com/photo-1518611012118-696072aa579a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+            />
+          </div>
+          <div>
+            <ThumbnailYT3
+              quote="Learn Javascript in 30 mins"
+              subQuote="#CodeWithMe"
+              imageURL="https://web.learncodeonline.in/static/g1-ab1d75af935ef6d6aa92891c1b4cb51b.jpg"
             />
           </div>
         </div>

@@ -2,10 +2,8 @@
 
 - Template to Images
 - Supports:
-  - Posts: LinkedIN, Instagram (re-purpose everywhere: twitter, facebook, reddit)
+  - Posts: Instagram, LinkedIN, Twitter, Facebook
   - Thumbnails: YT
-  - Banners: Blog and emails
-- Unlimited projects
 - Privacy: We never store your on our servers
 - Request for custom template (I create templates for now, later user generated.)
 - Free trial: 15 images per month based on limited templates.
@@ -23,13 +21,15 @@
 - [ ] no customizability on ui
 - [ ] batch process friendly
 - [ ] template dimensions
-  - [ ] width: 1080px
-  - [ ] squarish - 1:1
-  - [ ] horizontalish - 3:2
-  - [ ] cover and thumbnails - 16:9
-  - [ ] verticalish - 2:3
+  - [ ] square - 1:1
+  - [ ] horizontal - 16:9
+
+#### Target
+
+- [ ] insta-linkedin-twitter posts (square)
+- [ ] youtube thumbnails (horizontal)
 
 #### Templates
 
-- designs: 21 templates
-- dimensions: landscape, sqaure, potrait
+- dimensions: landscape, sqaure
+- designs: 12 templates + custom

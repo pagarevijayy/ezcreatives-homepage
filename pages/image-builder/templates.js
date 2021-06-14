@@ -6,6 +6,7 @@ import {
   Wisdom4,
   SquareTwitter,
   SquareQuote,
+  ThumbnailYT1,
 } from "../../lib/design-templates/classic-designs";
 import Container from "../../layouts/container";
 
@@ -65,6 +66,13 @@ const templates = () => {
               socialHandle="Founder, Y Combinator"
               imageURL="https://pbs.twimg.com/profile_images/1824002576/pg-railsconf_400x400.jpg"
               mainContentTextSize="text-2xl"
+            />
+          </div>
+          <div>
+            <ThumbnailYT1
+              quote="Learn how to make delicious pizzas under 15mins"
+              subQuote="#TastyBites"
+              imageURL="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=714&q=80"
             />
           </div>
         </div>

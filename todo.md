@@ -27,7 +27,7 @@
 
 - [ ] Functionality (roadmap)
   - [ ] export multiple formats (png, svg, etc)
-  - [ ] accept multiple image dimensions (as per use case like cover image, thumbnail, etc.)
+  - [ ] image dimension: vertical (IG TV thumbnail and stories)
   - [ ] smart crop on images
   - [ ] QR codes
   - [ ] integrations: google sheets , zapier, airtable, forms
@@ -35,38 +35,6 @@
   - [ ] create a 'copy to clip board' button (quote, caption, name, hashtag)
 
 #### TO DO
-
-<!-- landing page: Pitch, Demo, Templates, Pricing, Blog, Get Access. -->
-
-- [ ] Design templates
-- [ ] Dashboard UX
-- [ ] Blog
-
----
-
-- [ ] Landing Page
-
-  - [x] hero section
-
-- [ ] design templates
-  - [ ] square: 4 (b/w) + 3 color
-  - [ ] horizontal: 7 + 4 (thumbnail)
-  - [ ] vertical: 7
-- [ ] dashboard design
-- [ ] continue landing page...
-
-- [] templates
-  - [x] social dimensions
-  - [x] squarish 4 done
-    - [ ] add more colorful like
-      - [ ] https://www.bannerbear.com/templates/ ( wisdom public, twitter square yellow)
-  - [ ] landscape and vertical
-    - [ ] https://www.bannerbear.com/templates/ (podcast clip, basic open graph, welcome landscape, others...)
-    - [ ] https://www.canva.com/
-
----
-
----
 
 WEEK 3 OKR
 
@@ -92,3 +60,25 @@ sept - scale or landing page builder
 job! + side hacking.
 
 ---
+
+<!-- landing page: Pitch, Demo, Templates, Pricing, Blog, Get Access. -->
+
+- [ ] Design templates
+- [ ] Dashboard UX
+- [ ] Blog
+
+---
+
+- [ ] Design templates
+- [ ] Complete Landing Page
+- [ ] App - dashboard
+
+- [] templates
+  - [x] social dimensions
+  - [x] square 7
+  - [ ] horizontal
+    - [ ] https://www.canva.com/design/DAEhWoP0mZQ/wG90Jwr5y5Po0rEBdb8Yvg/edit?layoutQuery=YouTube+Thumbnail
+    - [ ] https://www.canva.com/design/DAEhWm4m1po/NBCNSMveXbvLMByDP0sijw/edit?layoutQuery=YouTube+Thumbnail
+    - [ ] https://www.canva.com/design/DAEhWl8qKXo/dZ3DFzxC7ugIcgYrplUhRg/edit?layoutQuery=YouTube+Thumbnail
+    - [ ] https://www.youtube.com/results?search_query=podcast [podcast ]
+    - [ ] https://www.youtube.com/c/TensorFlow/videos

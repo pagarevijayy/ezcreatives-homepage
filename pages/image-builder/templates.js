@@ -7,6 +7,7 @@ import {
   SquareTwitter,
   SquareQuote,
   ThumbnailYT1,
+  ThumbnailYT2,
 } from "../../lib/design-templates/classic-designs";
 import Container from "../../layouts/container";
 
@@ -73,6 +74,13 @@ const templates = () => {
               quote="Learn how to make delicious pizzas under 15mins"
               subQuote="#TastyBites"
               imageURL="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=714&q=80"
+            />
+          </div>
+          <div>
+            <ThumbnailYT2
+              quote="Total Core Workout"
+              subQuote="20 mins challenge"
+              imageURL="https://images.unsplash.com/photo-1518611012118-696072aa579a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
             />
           </div>
         </div>

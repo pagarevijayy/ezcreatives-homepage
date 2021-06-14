@@ -9,6 +9,7 @@ import {
   ThumbnailYT1,
   ThumbnailYT2,
   ThumbnailYT3,
+  ThumbnailYT4,
 } from "../../lib/design-templates/classic-designs";
 import Container from "../../layouts/container";
 
@@ -89,6 +90,14 @@ const templates = () => {
               quote="Learn Javascript in 30 mins"
               subQuote="#CodeWithMe"
               imageURL="https://web.learncodeonline.in/static/g1-ab1d75af935ef6d6aa92891c1b4cb51b.jpg"
+            />
+          </div>
+          <div>
+            <ThumbnailYT4
+              quote="How Digital Marketing will change in 2021"
+              subQuote="in conversation with Neil Patel"
+              imageURL1="https://assets.entrepreneur.com/content/1x1/300/20180118150600-GaryVaynerchuk-Headshot.png"
+              imageURL2="https://pbs.twimg.com/profile_images/829191018331385858/jxsj-ZmD.jpg"
             />
           </div>
         </div>

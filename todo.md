@@ -73,12 +73,7 @@ job! + side hacking.
 - [ ] Complete Landing Page
 - [ ] App - dashboard
 
-- [] templates
+- [x] templates
   - [x] social dimensions
   - [x] square 7
-  - [ ] horizontal
-    - [ ] https://www.canva.com/design/DAEhWoP0mZQ/wG90Jwr5y5Po0rEBdb8Yvg/edit?layoutQuery=YouTube+Thumbnail
-    - [ ] https://www.canva.com/design/DAEhWm4m1po/NBCNSMveXbvLMByDP0sijw/edit?layoutQuery=YouTube+Thumbnail
-    - [ ] https://www.canva.com/design/DAEhWl8qKXo/dZ3DFzxC7ugIcgYrplUhRg/edit?layoutQuery=YouTube+Thumbnail
-    - [ ] https://www.youtube.com/results?search_query=podcast [podcast ]
-    - [ ] https://www.youtube.com/c/TensorFlow/videos
+  - [x] horizontal

@@ -11,6 +11,7 @@ import {
   ThumbnailYT3,
   ThumbnailYT4,
   ThumbnailIGTV1,
+  ThumbnailIGTV2,
 } from "../../lib/design-templates/classic-designs";
 import Container from "../../layouts/container";
 
@@ -106,6 +107,13 @@ const templates = () => {
               quote="How Digital Marketing will change in 2021"
               subQuote="in conversation with Neil Patel"
               imageURL="https://pbs.twimg.com/profile_images/829191018331385858/jxsj-ZmD.jpg"
+            />
+          </div>
+          <div>
+            <ThumbnailIGTV2
+              quote="Learn how to make delicious pizzas under 15mins"
+              subQuote="#TastyBites"
+              imageURL="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=714&q=80"
             />
           </div>
         </div>

@@ -1,7 +1,10 @@
 import { useRef } from "react";
 import * as htmlToImage from "html-to-image";
 
-import { Wisdom0, Wisdom1 } from "../lib/design-templates/classic-designs";
+import {
+  Wisdom0,
+  ThumbnailIGTV3,
+} from "../lib/design-templates/classic-designs";
 
 import Container from "../layouts/container";
 import { WETHESAPIENS } from "../data/content";
@@ -15,7 +18,7 @@ const DesignImage = () => {
   function exportFiles() {
     console.log("let the download begin!");
 
-    // downloadFiles(wisdom.current, `creative_n`);
+    // downloadFiles(wisdom.current, `ThumbnailIGTV3`);
     // downloadFiles(elementRef.current[0], `creative_`);
 
     elementRef.current.forEach((e, i) => {
@@ -66,12 +69,10 @@ const DesignImage = () => {
         <div className="mx-auto pb-8">
           <div className="flex flex-wrap gap-6">
             {/* <div ref={wisdom}>
-              <Wisdom1
-                quote="You know, there are two good things in life, freedom of thought and freedom of action."
-                author="Bertrand Russell"
-                imageURL="https://pbs.twimg.com/media/E3tKe1kVEAI2L45.jpg"
-                socialHandle="The Philosophy Quote"
-                mainContentPadding="px-8"
+              <ThumbnailIGTV3
+                quote="Art of War"
+                subQuote="Chapter 4"
+                imageURL="https://pbs.twimg.com/media/Eu-1XoxUcAMhhsb.jpg"
               />
             </div> */}
             {WETHESAPIENS.contentArray.map((post, index) => {

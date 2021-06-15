@@ -69,12 +69,16 @@ job! + side hacking.
 
 ---
 
-- [ ] Design templates
-- [ ] Complete Landing Page
-- [ ] App - dashboard
-
 - [x] templates
+
   - [x] social dimensions
   - [x] square 7
   - [x] horizontal
-  - [ ] vertical(pizza, podcast, makeup, lifestyle/traveling )
+  - [x] vertical(pizza, podcast, makeup, lifestyle/traveling )
+
+- [x] Design templates
+- [ ] Complete Landing Page
+  - [ ] templates - sq(3),horizonal(3), vertical(2)
+- [ ] App - dashboard
+
+session one - 12 to 1.15pm

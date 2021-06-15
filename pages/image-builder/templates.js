@@ -92,7 +92,7 @@ const templates = () => {
             <ThumbnailYT3
               quote="Learn Javascript in 30 mins"
               subQuote="#CodeWithMe"
-              imageURL="https://web.learncodeonline.in/static/g1-ab1d75af935ef6d6aa92891c1b4cb51b.jpg"
+              imageURL="https://pbs.twimg.com/media/E36hbk3VUAcknvn.jpg"
             />
           </div>
           <div>

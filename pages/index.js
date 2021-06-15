@@ -138,6 +138,122 @@ export default function Home() {
               </li>
             </ul>
           </section>
+          <section className="mt-12 text-center">
+            <p className="text-2xl font-medium px-2">
+              For digital marketers, social media managers, and content
+              creators!
+            </p>
+            <p className="mt-6">
+              Up your social game with our design templates and Youtube
+              thumbnail automation. Shoot fast, Publish faster.
+            </p>
+            <div className="py-8 ">
+              <Swiper
+                slidesPerView={"auto"}
+                spaceBetween={30}
+                centeredSlides={true}
+                autoplay={{
+                  delay: 2500,
+                  disableOnInteraction: false,
+                }}
+                pagination={{ clickable: true }}
+              >
+                <SwiperSlide>
+                  <img
+                    className="rounded-lg"
+                    src="/images/ThumbnailYT1.png"
+                    alt="Automatically created youtube thumbnail"
+                    height="195px"
+                    width="320px"
+                  />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img
+                    className="rounded-lg"
+                    src="/images/ThumbnailYT4.png"
+                    alt="Automatically created youtube thumbnail"
+                    height="195px"
+                    width="320px"
+                  />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img
+                    className="rounded-lg"
+                    src="/images/ThumbnailYT2.png"
+                    alt="Automatically created youtube thumbnail"
+                    height="195px"
+                    width="320px"
+                  />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img
+                    className="rounded-lg"
+                    src="/images/ThumbnailYT3.png"
+                    alt="Automatically created youtube thumbnail"
+                    height="195px"
+                    width="320px"
+                  />
+                </SwiperSlide>
+              </Swiper>
+            </div>
+          </section>
+          <section className="mt-12 text-center">
+            <p className="text-2xl font-medium px-2">
+              Leverage Trends like a Boss
+            </p>
+            <p className="mt-6">
+              We got you covered on Instagram from the Regular Feed to IGTV,
+              Stories, and Reels. Vertical layouts, No worries!
+            </p>
+            <div className="py-8 ">
+              <Swiper
+                slidesPerView={"auto"}
+                spaceBetween={30}
+                centeredSlides={true}
+                autoplay={{
+                  delay: 2500,
+                  disableOnInteraction: false,
+                }}
+                pagination={{ clickable: true }}
+              >
+                <SwiperSlide>
+                  <img
+                    className="rounded-lg"
+                    src="/images/ThumbnailIGTV3.png"
+                    alt="Automatically created IGTV and Reel thumbnails"
+                    height="320px"
+                    width="195px"
+                  />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img
+                    className="rounded-lg"
+                    src="/images/ThumbnailIGTV1.png"
+                    alt="Automatically created IGTV and Reel thumbnails"
+                    height="320px"
+                    width="195px"
+                  />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img
+                    className="rounded-lg"
+                    src="/images/ThumbnailIGTV2.png"
+                    alt="Automatically created IGTV and Reel thumbnails"
+                    height="320px"
+                    width="195px"
+                  />
+                </SwiperSlide>
+              </Swiper>
+            </div>
+            <div>
+              <Link href="/templates">
+                <button className="w-64 md:w-auto px-4 py-2 text-cyan-600 focus:outline-none border border-cyan-500 rounded-3xl">
+                  Checkout Sample Templates
+                </button>
+              </Link>
+            </div>
+          </section>
+          <section></section>
         </Container>
       </div>
     </>

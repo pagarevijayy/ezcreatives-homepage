@@ -28,6 +28,21 @@ export default function Home() {
     </svg>
   );
 
+  const tickMarkIcon = (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      className="h-5 w-5 text-cyan-500"
+      viewBox="0 0 20 20"
+      fill="currentColor"
+    >
+      <path
+        fillRule="evenodd"
+        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+        clipRule="evenodd"
+      />
+    </svg>
+  );
+
   return (
     <>
       <Head>
@@ -38,9 +53,9 @@ export default function Home() {
         <Menubar />
         <Container>
           <section className="hero-section text-center">
-            <p className="mt-8 text-3xl sm:text-5xl md:max-w-screen-sm md:mx-auto font-poppins font-bold tracking-wide">
+            <h1 className="mt-8 text-3xl sm:text-5xl md:max-w-screen-sm md:mx-auto font-poppins font-bold tracking-wide">
               {PROJECT_PUNCHLINE}
-            </p>
+            </h1>
             <p className="mt-8 px-2 text-xl md:text-2xl md:max-w-screen-sm md:mx-auto font-poppins">
               {PROJECT_DESCRIPTION}
             </p>
@@ -105,14 +120,14 @@ export default function Home() {
             </p>
           </section>
           <section className="text-center mt-12">
-            <p className="text-2xl font-medium px-2">
+            <h2 className="text-2xl font-medium px-2">
               Focus on the actual art, leave the mundane on us!
-            </p>
+            </h2>
             <p className="mt-6">
               Our mission is to help digital businesses save time and scale
               their social presence.
             </p>
-            <p className="mt-12 text-3xl font-medium">How can we help?</p>
+            <h2 className="mt-12 text-3xl font-medium">How can we help?</h2>
             <ul className="mt-4 flex flex-wrap gap-2 uppercase text-xs font-medium ">
               <li className="inline-flex items-center text-cyan-600 px-3 py-1.5 bg-cyan-100 rounded-3xl mx-auto">
                 {checkMarkIcon} <span className="px-2">Instagram Feed </span>
@@ -139,10 +154,10 @@ export default function Home() {
             </ul>
           </section>
           <section className="mt-12 text-center">
-            <p className="text-2xl font-medium px-2">
+            <h2 className="text-2xl font-medium px-2">
               For digital marketers, social media managers, and content
               creators!
-            </p>
+            </h2>
             <p className="mt-6">
               Up your social game with our design templates and Youtube
               thumbnail automation. Shoot fast, Publish faster.
@@ -198,14 +213,14 @@ export default function Home() {
             </div>
           </section>
           <section className="mt-12 text-center">
-            <p className="text-2xl font-medium px-2">
+            <h2 className="text-2xl font-medium px-2">
               Leverage Trends like a Boss
-            </p>
+            </h2>
             <p className="mt-6">
               We got you covered on Instagram from the Regular Feed to IGTV,
               Stories, and Reels. Vertical layouts, No worries!
             </p>
-            <div className="py-8 ">
+            <div className="py-8">
               <Swiper
                 slidesPerView={"auto"}
                 spaceBetween={30}
@@ -253,8 +268,163 @@ export default function Home() {
               </Link>
             </div>
           </section>
-          <section></section>
+          <section className="mt-12 text-center ">
+            <h2 className="text-2xl font-medium">Pricing</h2>
+            <p className="mt-4 text-gray-500 text-sm">
+              FREE 15 images per month, Cheers! :)
+            </p>
+            <div className="mt-8">
+              <div className="p-8 border border-gray-300 rounded-xl">
+                <h3 className="text-xl font-medium">Basic</h3>
+                <p className="mt-4 text-gray-500">
+                  <span className="text-gray-800 text-2xl font-semibold">
+                    $25
+                  </span>{" "}
+                  / mo
+                </p>
+                <div className="mt-4">
+                  <Link href="/something">
+                    <button className="w-48 px-4 py-2.5 font-medium focus:outline-none text-gray-50 bg-gradient-to-tr from-cyan-300 to-cyan-500 rounded-3xl">
+                      Get Started
+                    </button>
+                  </Link>
+                </div>
+                <ul className="mt-6 space-y-3">
+                  <li className="flex items-center justify-center">
+                    {" "}
+                    {tickMarkIcon}
+                    <span className="px-1"> 1,000 images </span>
+                  </li>
+                  <li className="flex items-center justify-center">
+                    {" "}
+                    {tickMarkIcon}
+                    <span className="px-1"> Unlimited Design Template </span>
+                  </li>
+                  <li className="flex items-center justify-center">
+                    {" "}
+                    {tickMarkIcon}
+                    <span className="px-1"> Setup hand-holding </span>
+                  </li>
+
+                  <li className="flex items-center justify-center">
+                    {" "}
+                    {tickMarkIcon}
+                    <span className="px-1"> Basic Support </span>
+                  </li>
+                </ul>
+              </div>
+              <div className=" mt-6 p-8 border border-gray-300 rounded-xl">
+                <h3 className="text-xl font-medium">Pro</h3>
+                <p className="mt-4 text-gray-500">
+                  <span className="text-gray-800 text-2xl font-semibold">
+                    $65
+                  </span>{" "}
+                  / mo
+                </p>
+                <div className="mt-4">
+                  <Link href="/something">
+                    <button className="w-48 px-4 py-2.5 font-medium focus:outline-none text-gray-50 bg-gradient-to-tr from-cyan-300 to-cyan-500 rounded-3xl">
+                      Get Started
+                    </button>
+                  </Link>
+                </div>
+                <ul className="mt-6 space-y-3">
+                  <li className="flex items-center justify-center">
+                    {" "}
+                    {tickMarkIcon}
+                    <span className="px-1"> 10,000 images </span>
+                  </li>
+                  <li className="flex items-center justify-center">
+                    {" "}
+                    {tickMarkIcon}
+                    <span className="px-1"> Special Design Templates </span>
+                  </li>
+                  <li className="flex items-center justify-center">
+                    {" "}
+                    {tickMarkIcon}
+                    <span className="px-1"> Setup hand-holding </span>
+                  </li>
+
+                  <li className="flex items-center justify-center">
+                    {" "}
+                    {tickMarkIcon}
+                    <span className="px-1"> Premium Support </span>
+                  </li>
+                </ul>
+              </div>
+              <div className="mt-6 p-8 border border-gray-300 rounded-xl">
+                <h3 className="text-xl font-medium">Business</h3>
+                <p className="mt-4 text-gray-500">
+                  <span className="text-gray-800 text-2xl font-semibold">
+                    $165
+                  </span>{" "}
+                  / mo
+                </p>
+                <div className="mt-4">
+                  <Link href="/something">
+                    <button className="w-48 px-4 py-2.5 font-medium focus:outline-none text-gray-50 bg-gradient-to-tr from-cyan-300 to-cyan-500 rounded-3xl">
+                      Get Started
+                    </button>
+                  </Link>
+                </div>
+                <ul className="mt-6 space-y-3">
+                  <li className="flex items-center justify-center">
+                    {" "}
+                    {tickMarkIcon}
+                    <span className="px-1"> 50,000 images </span>
+                  </li>
+                  <li className="flex items-center justify-center">
+                    {" "}
+                    {tickMarkIcon}
+                    <span className="px-1"> 5 Custom Design Templates </span>
+                  </li>
+                  <li className="flex items-center justify-center">
+                    {" "}
+                    {tickMarkIcon}
+                    <span className="px-1">
+                      {" "}
+                      Special + Unlimited Templates{" "}
+                    </span>
+                  </li>
+                  <li className="flex items-center justify-center">
+                    {" "}
+                    {tickMarkIcon}
+                    <span className="px-1"> Setup hand-holding </span>
+                  </li>
+
+                  <li className="flex items-center justify-center">
+                    {" "}
+                    {tickMarkIcon}
+                    <span className="px-1"> Advanced Support </span>
+                  </li>
+                </ul>
+              </div>
+              <p className="mt-4">
+                Want something custom?
+                <Link href="/somewhere">
+                  <a className="px-1 underline text-cyan-600 hover:text-cyan-800 visited:text-purple-600">
+                    Get in touch!
+                  </a>
+                </Link>
+              </p>
+            </div>
+          </section>
+          <section className="mt-12 text-center">
+            <h2 className="text-2xl font-medium">Ready to Automate?</h2>
+            <div className="mt-4">
+              <Link href="/something">
+                <button className="w-48 px-4 py-2.5 font-medium focus:outline-none text-gray-50 bg-gradient-to-tr from-cyan-300 to-cyan-500 rounded-3xl">
+                  Let's Go!
+                </button>
+              </Link>
+            </div>
+          </section>
         </Container>
+        <footer className="mt-12 text-center border-t  border-gray-300">
+          <p className="mt-6 text-gray-500 font-poppins text-xs">
+            © ezCreatives. All rights reserved.
+          </p>
+        </footer>
       </div>
     </>
   );

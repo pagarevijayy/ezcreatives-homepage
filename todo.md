@@ -81,6 +81,7 @@ job! + side hacking.
   - [ ] yearly package option
   - [ ] button interativity
   - [ ] laptop responsive
+  - [ ] all clickable links are properly set up.
 - [ ] App - dashboard
 
 session one - 12 to 1.15pm (vetical template)

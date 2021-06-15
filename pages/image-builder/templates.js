@@ -12,6 +12,7 @@ import {
   ThumbnailYT4,
   ThumbnailIGTV1,
   ThumbnailIGTV2,
+  ThumbnailIGTV3,
 } from "../../lib/design-templates/classic-designs";
 import Container from "../../layouts/container";
 
@@ -114,6 +115,13 @@ const templates = () => {
               quote="Learn how to make delicious pizzas under 15mins"
               subQuote="#TastyBites"
               imageURL="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=714&q=80"
+            />
+          </div>
+          <div className="shadow">
+            <ThumbnailIGTV3
+              quote="Art of War"
+              subQuote="Chapter 4"
+              imageURL="https://pbs.twimg.com/media/Eu-1XoxUcAMhhsb.jpg"
             />
           </div>
         </div>

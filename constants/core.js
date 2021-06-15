@@ -8,6 +8,10 @@ export const MENU_OPTIONS = [
     route: "/demo",
   },
   {
+    title: "Templates",
+    route: "/templates",
+  },
+  {
     title: "Pricing",
     route: "#pricing",
   },
@@ -17,7 +21,7 @@ export const MENU_OPTIONS = [
  * Pitch: [ later]
  * 1. Sample Templates
  * 1. Ideal for? - digital creators, influencers, social media managers, and marketers!
- * 3. Use cases: blog and email banners, youtube thumbnails, and regular posts
+ * 3. Use cases: blog and email banners, youtube thumbnails, and feed posts
  * 4. Pricing
  * 5. CTA
  */

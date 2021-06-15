@@ -1,10 +1,7 @@
 import { useRef } from "react";
 import * as htmlToImage from "html-to-image";
 
-import {
-  Wisdom0,
-  ThumbnailIGTV3,
-} from "../lib/design-templates/classic-designs";
+import { Wisdom0, Wisdom1 } from "../lib/design-templates/classic-designs";
 
 import Container from "../layouts/container";
 import { WETHESAPIENS } from "../data/content";
@@ -18,12 +15,12 @@ const DesignImage = () => {
   function exportFiles() {
     console.log("let the download begin!");
 
-    // downloadFiles(wisdom.current, `ThumbnailIGTV3`);
+    downloadFiles(wisdom.current, `Wisdom1`);
     // downloadFiles(elementRef.current[0], `creative_`);
 
-    elementRef.current.forEach((e, i) => {
-      downloadFiles(e, `creative_${i}`);
-    });
+    // elementRef.current.forEach((e, i) => {
+    //   downloadFiles(e, `creative_${i}`);
+    // });
   }
 
   const downloadFiles = (element, filename) => {
@@ -68,13 +65,15 @@ const DesignImage = () => {
 
         <div className="mx-auto pb-8">
           <div className="flex flex-wrap gap-6">
-            {/* <div ref={wisdom}>
-              <ThumbnailIGTV3
-                quote="Art of War"
-                subQuote="Chapter 4"
-                imageURL="https://pbs.twimg.com/media/Eu-1XoxUcAMhhsb.jpg"
+            <div ref={wisdom}>
+              <Wisdom1
+                quote="Everything we hear is an opinion, not a fact. Everything we see is a perspective, not the truth."
+                author="Marcus Aurelius"
+                imageURL="https://pbs.twimg.com/media/E38SQg6VIAIAh5g.jpg"
+                socialHandle="@wethesapiens_"
+                mainContentPadding="px-8"
               />
-            </div> */}
+            </div>
             {WETHESAPIENS.contentArray.map((post, index) => {
               return (
                 <div key={`post_${index}`} className="mx-auto zoom-out-75">

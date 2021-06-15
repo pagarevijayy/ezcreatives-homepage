@@ -81,4 +81,7 @@ job! + side hacking.
   - [ ] templates - sq(3),horizonal(3), vertical(2)
 - [ ] App - dashboard
 
-session one - 12 to 1.15pm
+session one - 12 to 1.15pm (vetical template)
+session two - 2.45 to 3pm (production images)
+
+session three - 4.30 to 7.30pm (landing)

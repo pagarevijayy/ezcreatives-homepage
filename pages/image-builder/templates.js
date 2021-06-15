@@ -10,6 +10,7 @@ import {
   ThumbnailYT2,
   ThumbnailYT3,
   ThumbnailYT4,
+  ThumbnailIGTV1,
 } from "../../lib/design-templates/classic-designs";
 import Container from "../../layouts/container";
 
@@ -98,6 +99,13 @@ const templates = () => {
               subQuote="in conversation with Neil Patel"
               imageURL1="https://assets.entrepreneur.com/content/1x1/300/20180118150600-GaryVaynerchuk-Headshot.png"
               imageURL2="https://pbs.twimg.com/profile_images/829191018331385858/jxsj-ZmD.jpg"
+            />
+          </div>
+          <div>
+            <ThumbnailIGTV1
+              quote="How Digital Marketing will change in 2021"
+              subQuote="in conversation with Neil Patel"
+              imageURL="https://pbs.twimg.com/profile_images/829191018331385858/jxsj-ZmD.jpg"
             />
           </div>
         </div>

@@ -77,3 +77,4 @@ job! + side hacking.
   - [x] social dimensions
   - [x] square 7
   - [x] horizontal
+  - [ ] vertical(pizza, podcast, makeup, lifestyle/traveling )

@@ -63,7 +63,7 @@ const Menubar = () => {
   );
 
   return (
-    <header className="py-5 sticky top-0 z-10">
+    <header className="py-5 sticky top-0 z-10 bg-gray-100">
       <Container>
         <div className="flex justify-between items-center">
           <div className="font-poppins font-bold text-xl md:text-2xl tracking-wide">

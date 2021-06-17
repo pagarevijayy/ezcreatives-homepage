@@ -1,10 +1,7 @@
 import { useRef } from "react";
 import * as htmlToImage from "html-to-image";
 
-import {
-  Wisdom0,
-  ThumbnailIGTV3,
-} from "../lib/design-templates/classic-designs";
+import { Wisdom0, Wisdom4 } from "../lib/design-templates/classic-designs";
 
 import Container from "../layouts/container";
 import { WETHESAPIENS } from "../data/content";
@@ -18,7 +15,7 @@ const DesignImage = () => {
   function exportFiles() {
     console.log("let the download begin!");
 
-    // downloadFiles(wisdom.current, `ThumbnailIGTV3`);
+    // downloadFiles(wisdom.current, `ThumbnailIGTV2`);
     // downloadFiles(elementRef.current[0], `creative_`);
 
     elementRef.current.forEach((e, i) => {
@@ -69,21 +66,22 @@ const DesignImage = () => {
         <div className="mx-auto pb-8">
           <div className="flex flex-wrap gap-6">
             {/* <div ref={wisdom}>
-              <ThumbnailIGTV3
-                quote="Art of War"
-                subQuote="Chapter 4"
-                imageURL="https://pbs.twimg.com/media/Eu-1XoxUcAMhhsb.jpg"
+              <ThumbnailIGTV2
+                quote="Learn how to make delicious pizzas under 15mins"
+                subQuote="#TastyBites"
+                imageURL="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=714&q=80"
               />
             </div> */}
             {WETHESAPIENS.contentArray.map((post, index) => {
               return (
                 <div key={`post_${index}`} className="mx-auto zoom-out-75">
                   <div ref={addToElementRef}>
-                    <Wisdom0
+                    <Wisdom4
                       quote={post.quote}
                       author={post.author}
                       imageURL={post.image}
                       socialHandle={WETHESAPIENS.socialHandle}
+                      mainContentPadding="px-6"
                     />
                   </div>
                 </div>

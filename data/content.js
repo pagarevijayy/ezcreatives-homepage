@@ -1,5 +1,5 @@
 export const WETHESAPIENS = {
-  socialHandle: "wethesapiens_",
+  socialHandle: "@wethesapiens_",
   // contentArray: [
   //   {
   //     author: "Michael Faraday",
@@ -137,14 +137,36 @@ export const WETHESAPIENS = {
   //   },
   // ],
   contentArray: [
+    // {
+    //   author: "Robert Greene",
+    //   image:
+    //     "https://pbs.twimg.com/media/EwlbYvaUcAIWooU?format=jpg&name=small",
+    //   quote: `"Keep your friends for friendship, but work with the skilled and competent"`,
+    //   viewSecondaryContent:
+    //     "Michael Faraday FRS was an English scientist who contributed to the study of electromagnetism and electrochemistry.",
+    //   visible: false,
+    // },
+
     {
-      author: "Robert Greene",
-      image:
-        "https://pbs.twimg.com/media/EwlbYvaUcAIWooU?format=jpg&name=small",
-      quote: `"Keep your friends for friendship, but work with the skilled and competent"`,
-      viewSecondaryContent:
-        "Michael Faraday FRS was an English scientist who contributed to the study of electromagnetism and electrochemistry.",
-      visible: false,
+      author: "Sun Tzu",
+      image: "https://pbs.twimg.com/media/Eu-1XoxUcAMhhsb.jpg",
+      quote:
+        "Victorious warriors win first and then go to war, while defeated warriors go to war first and then seek to win.",
+    },
+    {
+      author: "African Proverb",
+      image: "https://pbs.twimg.com/media/E4FxflGUcA0OBIx.png",
+      IllustrationCredits: "@rovinacai",
+      quote:
+        "Not everyone who chased the zebra caught it, but he who caught it, chased it.",
+    },
+    {
+      author: "Thích Nhat Hanh",
+      image: "https://pbs.twimg.com/media/E4F6PcRUcBMVMKm.png",
+      tags: "@thichnhathanhsangha",
+      IllustrationCredits: "",
+      quote:
+        "For things to reveal themselves to us, we need to be ready to abandon our views about them.",
     },
     // {
     //   author: "Michael Faraday",

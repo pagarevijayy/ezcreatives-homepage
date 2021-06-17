@@ -78,7 +78,17 @@ job! + side hacking.
 
 - [x] Design templates
 - [ ] Complete Landing Page
-  - [ ] templates - sq(3),horizonal(3), vertical(2)
+  - [ ] yearly package option
+  - [ ] button interativity
+  - [ ] laptop responsive
+  - [ ] all clickable links are properly set up.
 - [ ] App - dashboard
 
-session one - 12 to 1.15pm
+session one - 12 to 1.15pm (vetical template)
+session two - 2.45 to 3pm (production images)
+
+session three - 4.30 to 7.30pm (landing)
+
+---
+
+Illustration credits due.

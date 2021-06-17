@@ -119,7 +119,7 @@ export default function Home() {
               Sample Auto-Generated Instagram Feed
             </p>
           </section>
-          <section className="text-center mt-12">
+          <section className="mt-12 text-center">
             <h2 className="text-2xl font-medium px-2">
               Focus on the actual art, leave the mundane on us!
             </h2>
@@ -128,7 +128,7 @@ export default function Home() {
               their social presence.
             </p>
             <h2 className="mt-12 text-3xl font-medium">How can we help?</h2>
-            <ul className="mt-4 flex flex-wrap gap-2 uppercase text-xs font-medium ">
+            <ul className="mt-4 flex flex-wrap gap-2 uppercase text-xs font-semibold ">
               <li className="inline-flex items-center text-cyan-600 px-3 py-1.5 bg-cyan-100 rounded-3xl mx-auto">
                 {checkMarkIcon} <span className="px-2">Instagram Feed </span>
               </li>
@@ -262,7 +262,7 @@ export default function Home() {
             </div>
             <div>
               <Link href="/templates">
-                <button className="w-64 md:w-auto px-4 py-2 text-cyan-600 focus:outline-none border border-cyan-500 rounded-3xl">
+                <button className="w-64 md:w-auto px-4 py-2 text-cyan-600 font-medium focus:outline-none border border-cyan-500 rounded-3xl">
                   Checkout Sample Templates
                 </button>
               </Link>

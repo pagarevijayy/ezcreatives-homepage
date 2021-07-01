@@ -65,12 +65,12 @@ const Menubar = () => {
   return (
     <header className="py-5 sticky top-0 z-10 bg-gray-100">
       <Container>
-        <div className="flex justify-between items-center">
+        <div className="flex justify-between items-center md:px-6">
           <div className="font-poppins font-bold text-xl md:text-2xl tracking-wide">
             <Link href="/">{brandLogo}</Link>
           </div>
           <div>
-            <nav className="laptop-nav hidden md:block text-lg">
+            <nav className="laptop-nav hidden lg:block">
               <ul className="flex items-center space-x-6 font-medium">
                 {menuItems.map((item, index) => {
                   return (
@@ -84,7 +84,7 @@ const Menubar = () => {
                 {getPremiumButton}
               </ul>
             </nav>
-            <div className="hamburgerIcon md:hidden" onClick={toggleSidebar}>
+            <div className="hamburgerIcon lg:hidden" onClick={toggleSidebar}>
               {hamburgerIcon}
             </div>
           </div>

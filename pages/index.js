@@ -68,10 +68,10 @@ export default function Home() {
                 </button>
               </Link>
             </div>
-            <p className="mt-6 text-gray-600 text-xs">
+            <p className="mt-8 text-gray-600 text-xs">
               Live Instagram Samples Shown Below
             </p>
-            <div className="py-8 md:hidden">
+            <div className="py-6 md:hidden">
               <Swiper
                 slidesPerView={"auto"}
                 spaceBetween={30}
@@ -125,7 +125,7 @@ export default function Home() {
             </p> */}
           </section>
           <section className="mt-8 text-center">
-            <h2 className="text-xl font-medium px-2">
+            <h2 className="text-xl font-medium px-2 max-w-xs mx-auto">
               Focus on the actual content, leave images on us!
             </h2>
             <p className="mt-6 px-4">
@@ -133,28 +133,38 @@ export default function Home() {
               scale their businesses using our automation suite
             </p>
             <h2 className="mt-12 text-3xl font-medium">How can we help?</h2>
-            <ul className="mt-4 space-y-2 uppercase text-xs font-semibold ">
-              <li className="inline-flex items-center text-cyan-600 px-3 py-1.5 bg-cyan-100 rounded-3xl mx-auto">
-                {checkMarkIcon}{" "}
-                <span className="px-2">Youtube Thumbnails </span>
+            <ul className="mt-6 space-y-2 uppercase text-xs font-semibold ">
+              <li>
+                <div className="inline-flex items-center text-cyan-600 px-3 py-1.5 bg-cyan-100 rounded-3xl mx-auto">
+                  {checkMarkIcon}{" "}
+                  <span className="px-2">Youtube Thumbnails </span>
+                </div>
               </li>
-              <li className="inline-flex items-center text-cyan-600 px-3 py-1.5 bg-cyan-100 rounded-3xl mx-auto">
-                {checkMarkIcon} <span className="px-2">Instagram Posts</span>
-              </li>
-
-              <li className="inline-flex items-center text-cyan-600 px-3 py-1.5 bg-cyan-100 rounded-3xl mx-auto">
-                {checkMarkIcon}
-                <span className="px-2">Blog / Email Banners </span>
-              </li>
-
-              <li className="inline-flex items-center text-cyan-600 px-3 py-1.5 bg-cyan-100 rounded-3xl mx-auto">
-                {checkMarkIcon}
-                <span className="px-2">IGTV / Reel Thumbnails </span>
+              <li>
+                <div className="inline-flex items-center text-cyan-600 px-3 py-1.5 bg-cyan-100 rounded-3xl mx-auto">
+                  {checkMarkIcon} <span className="px-2">Instagram Posts</span>
+                </div>
               </li>
 
-              <li className="inline-flex items-center text-cyan-600 px-3 py-1.5 bg-cyan-100 rounded-3xl mx-auto">
-                {checkMarkIcon}
-                <span className="px-2">Twitter / LinkedIn / Facebook Feed</span>
+              <li>
+                <div className="inline-flex items-center text-cyan-600 px-3 py-1.5 bg-cyan-100 rounded-3xl mx-auto">
+                  {checkMarkIcon}
+                  <span className="px-2">Blog / Email Banners </span>
+                </div>
+              </li>
+
+              <li>
+                <div className="inline-flex items-center text-cyan-600 px-3 py-1.5 bg-cyan-100 rounded-3xl mx-auto">
+                  {checkMarkIcon}
+                  <span className="px-2">IGTV / Reel Thumbnails </span>
+                </div>
+              </li>
+
+              <li>
+                <div className="inline-flex items-center text-cyan-600 px-3 py-1.5 bg-cyan-100 rounded-3xl mx-auto">
+                  {checkMarkIcon}
+                  <span className="px-2">Twitter / LinkedIn / FB Posts</span>
+                </div>
               </li>
             </ul>
           </section>
@@ -166,10 +176,10 @@ export default function Home() {
               Up your social media game with our design templates. Shoot fast,
               Publish faster.
             </p>
-            <p className="mt-6 text-gray-600 text-xs">
+            <p className="mt-8 text-gray-600 text-xs">
               Youtube Thumbnail Samples Shown Below
             </p>
-            <div className="py-8 ">
+            <div className="py-6 ">
               <Swiper
                 slidesPerView={"auto"}
                 spaceBetween={30}
@@ -227,10 +237,10 @@ export default function Home() {
               Get your content up and running quickly. Don't miss on trending
               opportunities.
             </p>
-            <p className="mt-6 text-gray-600 text-xs">
+            <p className="mt-8 text-gray-600 text-xs">
               IGTV and Reels Thumbnail Samples Below
             </p>
-            <div className="py-8">
+            <div className="py-6">
               <Swiper
                 slidesPerView={"auto"}
                 spaceBetween={30}
@@ -288,7 +298,7 @@ export default function Home() {
               FREE 15 images per month, Cheers! :)
             </p> */}
             <div className="mt-8">
-              <div className="p-8 border border-gray-300 rounded-xl">
+              <div className="p-8 border border-gray-300 rounded-xl max-w-xs mx-auto">
                 <h3 className="text-xl font-medium">Basic</h3>
                 <p className="mt-4 text-gray-500">
                   <span className="text-gray-800 text-2xl font-semibold">
@@ -303,7 +313,7 @@ export default function Home() {
                     </button>
                   </Link>
                 </div>
-                <ul className="mt-6 space-y-3">
+                <ul className="mt-6 space-y-3 text-sm">
                   <li className="flex items-center justify-center">
                     {" "}
                     {tickMarkIcon}
@@ -327,7 +337,7 @@ export default function Home() {
                   </li>
                 </ul>
               </div>
-              <div className=" mt-6 p-8 border border-gray-300 rounded-xl">
+              <div className=" mt-6 p-8 border border-gray-300 rounded-xl max-w-xs mx-auto">
                 <h3 className="text-xl font-medium">Pro</h3>
                 <p className="mt-4 text-gray-500">
                   <span className="text-gray-800 text-2xl font-semibold">
@@ -342,7 +352,7 @@ export default function Home() {
                     </button>
                   </Link>
                 </div>
-                <ul className="mt-6 space-y-3">
+                <ul className="mt-6 space-y-3 text-sm">
                   <li className="flex items-center justify-center">
                     {" "}
                     {tickMarkIcon}
@@ -366,7 +376,7 @@ export default function Home() {
                   </li>
                 </ul>
               </div>
-              <div className="mt-6 p-8 border border-gray-300 rounded-xl">
+              <div className="mt-6 p-8 border border-gray-300 rounded-xl max-w-xs mx-auto">
                 <h3 className="text-xl font-medium">Business Pro </h3>
                 <p className="mt-4 text-gray-500">
                   <span className="text-gray-800 text-2xl font-semibold">
@@ -381,7 +391,7 @@ export default function Home() {
                     </button>
                   </Link>
                 </div>
-                <ul className="mt-6 space-y-3">
+                <ul className="mt-6 space-y-3 text-sm">
                   <li className="flex items-center justify-center">
                     {" "}
                     {tickMarkIcon}
@@ -413,7 +423,7 @@ export default function Home() {
                   </li>
                 </ul>
               </div>
-              <p className="mt-4 text-sm">
+              <p className="mt-4 text-xs">
                 Want something custom?
                 <Link href="/somewhere">
                   <a className="px-1 underline text-cyan-600 hover:text-cyan-800 visited:text-purple-600">
@@ -427,7 +437,7 @@ export default function Home() {
             <h2 className="text-xl font-medium">Ready to Automate?</h2>
             <div className="mt-4 text-sm">
               <Link href="/something">
-                <button className="w-48 px-3 py-2.5 font-medium focus:outline-none text-gray-50 bg-gradient-to-tr from-cyan-300 to-cyan-500 rounded-3xl">
+                <button className="w-48 px-3 py-2.5 font-medium focus:outline-none border border-cyan-500 rounded-3xl">
                   Request Access
                 </button>
               </Link>

@@ -36,3 +36,9 @@
 
 - dimensions: landscape, sqaure
 - designs: 12 templates + custom
+
+---
+
+Product demo section
+
+- intergerate with google sheets

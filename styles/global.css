@@ -8,6 +8,12 @@
 
 @tailwind utilities;
 
+@responsive {
+  .invert-direction {
+    direction: rtl;
+  }
+}
+
 .swiper-wrapper {
   padding-bottom: 30px;
 }

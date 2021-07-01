@@ -121,109 +121,126 @@ export default function Home() {
               </Swiper>
             </div>
           </section>
-          <section className="mt-6 sm:mt-12 text-center">
-            <h2 className="text-xl sm:text-2xl font-medium px-2 max-w-xs sm:max-w-sm mx-auto">
-              Focus on the actual content, leave images on us!
-            </h2>
-            <p className="mt-6 px-4 sm:max-w-lg sm:mx-auto">
-              Our mission is to help content creators and digital marketers
-              scale their businesses using our automation suite
-            </p>
-            <h2 className="mt-8 text-3xl font-medium">How can we help?</h2>
-            <ul className="mt-6 space-y-2 uppercase text-xs font-semibold ">
-              <li>
-                <div className="inline-flex items-center text-cyan-600 px-3 py-1.5 bg-cyan-100 rounded-3xl mx-auto">
-                  {checkMarkIcon}{" "}
-                  <span className="px-2">Youtube Thumbnails </span>
-                </div>
-              </li>
-              <li>
-                <div className="inline-flex items-center text-cyan-600 px-3 py-1.5 bg-cyan-100 rounded-3xl mx-auto">
-                  {checkMarkIcon} <span className="px-2">Instagram Posts</span>
-                </div>
-              </li>
+          <section className="mt-6 sm:mt-12 text-center lg:grid lg:grid-cols-2">
+            <div className="flex flex-col items-start justify-center lg:text-left">
+              <h2 className="text-xl sm:text-2xl font-medium px-2 lg:px-0 max-w-xs sm:max-w-sm mx-auto lg:mx-16">
+                Focus on the actual content, leave images on us!
+              </h2>
+              <p className="mt-6 px-4 lg:px-0 sm:max-w-lg lg:max-w-sm sm:mx-auto lg:mx-16">
+                Our mission is to help content creators and digital marketers
+                scale their businesses using our automation suite
+              </p>
+            </div>
+            <div>
+              <h2 className="mt-8 lg:mt-0 text-3xl font-medium">
+                How can we help?
+              </h2>
+              <ul className="mt-6 space-y-2 uppercase text-xs font-semibold ">
+                <li>
+                  <div className="inline-flex items-center text-cyan-600 px-3 py-1.5 bg-cyan-100 rounded-3xl mx-auto">
+                    {checkMarkIcon}{" "}
+                    <span className="px-2">Youtube Thumbnails </span>
+                  </div>
+                </li>
+                <li>
+                  <div className="inline-flex items-center text-cyan-600 px-3 py-1.5 bg-cyan-100 rounded-3xl mx-auto">
+                    {checkMarkIcon}{" "}
+                    <span className="px-2">Instagram Posts</span>
+                  </div>
+                </li>
 
-              <li>
-                <div className="inline-flex items-center text-cyan-600 px-3 py-1.5 bg-cyan-100 rounded-3xl mx-auto">
-                  {checkMarkIcon}
-                  <span className="px-2">Blog / Email Banners </span>
-                </div>
-              </li>
+                <li>
+                  <div className="inline-flex items-center text-cyan-600 px-3 py-1.5 bg-cyan-100 rounded-3xl mx-auto">
+                    {checkMarkIcon}
+                    <span className="px-2">Blog / Email Banners </span>
+                  </div>
+                </li>
 
-              <li>
-                <div className="inline-flex items-center text-cyan-600 px-3 py-1.5 bg-cyan-100 rounded-3xl mx-auto">
-                  {checkMarkIcon}
-                  <span className="px-2">IGTV / Reel Thumbnails </span>
-                </div>
-              </li>
+                <li>
+                  <div className="inline-flex items-center text-cyan-600 px-3 py-1.5 bg-cyan-100 rounded-3xl mx-auto">
+                    {checkMarkIcon}
+                    <span className="px-2">IGTV / Reel Thumbnails </span>
+                  </div>
+                </li>
 
-              <li>
-                <div className="inline-flex items-center text-cyan-600 px-3 py-1.5 bg-cyan-100 rounded-3xl mx-auto">
-                  {checkMarkIcon}
-                  <span className="px-2">Twitter / LinkedIn / FB Posts</span>
-                </div>
-              </li>
-            </ul>
+                <li>
+                  <div className="inline-flex items-center text-cyan-600 px-3 py-1.5 bg-cyan-100 rounded-3xl mx-auto">
+                    {checkMarkIcon}
+                    <span className="px-2">Twitter / LinkedIn / FB Posts</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
           </section>
-          <section className="mt-12 text-center">
-            <h2 className="text-xl sm:text-2xl font-medium sm:mx-auto sm:max-w-sm">
-              For creators, digital marketers, and social media managers!
-            </h2>
-            <p className="mt-6 sm:mx-auto sm:max-w-md">
-              Up your social media game with our design templates. Shoot fast,
-              Publish faster.
-            </p>
-            <p className="mt-8 text-gray-600 text-xs">
-              Youtube Thumbnail Samples Shown Below
-            </p>
-            <div className="py-6 sm:mx-auto sm:max-w-lg">
-              <Swiper
-                slidesPerView={"auto"}
-                spaceBetween={30}
-                centeredSlides={true}
-                autoplay={{
-                  delay: 4000,
-                  disableOnInteraction: false,
-                }}
-                pagination={{ clickable: true }}
-              >
-                <SwiperSlide>
-                  <img
-                    className="rounded-lg"
-                    src="/images/ThumbnailYT1.png"
-                    alt="Automatically created youtube thumbnail"
-                    height="195px"
-                    width="320px"
-                  />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <img
-                    className="rounded-lg"
-                    src="/images/ThumbnailYT4.png"
-                    alt="Automatically created youtube thumbnail"
-                    height="195px"
-                    width="320px"
-                  />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <img
-                    className="rounded-lg"
-                    src="/images/ThumbnailYT2.png"
-                    alt="Automatically created youtube thumbnail"
-                    height="195px"
-                    width="320px"
-                  />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <img
-                    className="rounded-lg"
-                    src="/images/ThumbnailYT3.png"
-                    alt="Automatically created youtube thumbnail"
-                    height="195px"
-                    width="320px"
-                  />
-                </SwiperSlide>
-              </Swiper>
+          <section className="mt-12 text-center lg:text-left lg:grid lg:grid-cols-2 lg:invert-direction">
+            <div
+              className="flex flex-col items-start justify-center"
+              style={{ direction: "ltr" }}
+            >
+              <h2 className="text-xl sm:text-2xl font-medium sm:mx-auto lg:mx-16  sm:max-w-sm">
+                For creators, digital marketers, and social media managers!
+              </h2>
+              <p className="mt-6 sm:mx-auto  lg:mx-16 sm:max-w-md lg:max-w-sm">
+                Up your social media game with our design templates. Shoot fast,
+                Publish faster.
+              </p>
+              <p className="hidden lg:block mt-8 text-gray-600 text-xs sm:mx-auto lg:mx-16  sm:max-w-md">
+                Youtube Thumbnail Samples in the Left
+              </p>
+            </div>
+            <div>
+              <p className="mt-8 text-gray-600 text-xs lg:hidden">
+                Youtube Thumbnail Samples Shown Below
+              </p>
+              <div className="py-6 sm:mx-auto sm:max-w-lg">
+                <Swiper
+                  slidesPerView={"auto"}
+                  spaceBetween={30}
+                  centeredSlides={true}
+                  autoplay={{
+                    delay: 4000,
+                    disableOnInteraction: false,
+                  }}
+                  pagination={{ clickable: true }}
+                >
+                  <SwiperSlide>
+                    <img
+                      className="rounded-lg"
+                      src="/images/ThumbnailYT1.png"
+                      alt="Automatically created youtube thumbnail"
+                      height="195px"
+                      width="320px"
+                    />
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <img
+                      className="rounded-lg"
+                      src="/images/ThumbnailYT4.png"
+                      alt="Automatically created youtube thumbnail"
+                      height="195px"
+                      width="320px"
+                    />
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <img
+                      className="rounded-lg"
+                      src="/images/ThumbnailYT2.png"
+                      alt="Automatically created youtube thumbnail"
+                      height="195px"
+                      width="320px"
+                    />
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <img
+                      className="rounded-lg"
+                      src="/images/ThumbnailYT3.png"
+                      alt="Automatically created youtube thumbnail"
+                      height="195px"
+                      width="320px"
+                    />
+                  </SwiperSlide>
+                </Swiper>
+              </div>
             </div>
           </section>
           <section className="mt-8 text-center">

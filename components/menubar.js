@@ -70,7 +70,7 @@ const Menubar = () => {
             <Link href="/">{brandLogo}</Link>
           </div>
           <div>
-            <nav className="laptop-nav hidden lg:block text-lg">
+            <nav className="laptop-nav hidden lg:block">
               <ul className="flex items-center space-x-6 font-medium">
                 {menuItems.map((item, index) => {
                   return (

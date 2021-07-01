@@ -147,27 +147,30 @@ export const WETHESAPIENS = {
     //   visible: false,
     // },
 
+    // {
+    //   author: "George S. Patton",
+    //   image:
+    //     "https://t2.gstatic.com/licensed-image?q=tbn:ANd9GcTw_dLVO-_StyP69zCZHQbWut25nAx6ezXinmmJUCP7hPkSZV1l6F10MsNrDC5M",
+    //   caption: ``,
+    //   quote:
+    //     "A good plan violently executed right now is far better than a perfect plan executed next week.",
+    // },
     {
-      author: "Sun Tzu",
-      image: "https://pbs.twimg.com/media/Eu-1XoxUcAMhhsb.jpg",
+      author: "Jocko Willink",
+      image: "https://pbs.twimg.com/media/E4vFxi-UYAERPn9.png",
+      caption: ``,
       quote:
-        "Victorious warriors win first and then go to war, while defeated warriors go to war first and then seek to win.",
+        "When it comes to performance standards, It’s not what you preach, it’s what you tolerate.",
     },
-    {
-      author: "African Proverb",
-      image: "https://pbs.twimg.com/media/E4FxflGUcA0OBIx.png",
-      IllustrationCredits: "@rovinacai",
-      quote:
-        "Not everyone who chased the zebra caught it, but he who caught it, chased it.",
-    },
-    {
-      author: "Thích Nhat Hanh",
-      image: "https://pbs.twimg.com/media/E4F6PcRUcBMVMKm.png",
-      tags: "@thichnhathanhsangha",
-      IllustrationCredits: "",
-      quote:
-        "For things to reveal themselves to us, we need to be ready to abandon our views about them.",
-    },
+
+    // {
+    //   author: "Aristotle",
+    //   image: "https://pbs.twimg.com/media/E4F6PcRUcBMVMKm.png",
+    //   tags: "@thichnhathanhsangha",
+    //   IllustrationCredits: "",
+    //   quote:
+    //     "I count him braver who overcomes his desires than him who conquers his enemies; for the hardest victory is over self",
+    // },
     // {
     //   author: "Michael Faraday",
     //   image:

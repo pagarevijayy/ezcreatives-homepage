@@ -1,7 +1,11 @@
 import { useRef } from "react";
 import * as htmlToImage from "html-to-image";
 
-import { Wisdom0, Wisdom4 } from "../lib/design-templates/classic-designs";
+import {
+  Wisdom0,
+  Wisdom1,
+  ThumbnailIGTV3,
+} from "../lib/design-templates/classic-designs";
 
 import Container from "../layouts/container";
 import { WETHESAPIENS } from "../data/content";
@@ -19,7 +23,7 @@ const DesignImage = () => {
     // downloadFiles(elementRef.current[0], `creative_`);
 
     elementRef.current.forEach((e, i) => {
-      downloadFiles(e, `creative_${i}`);
+      downloadFiles(e, `creativex_${i}`);
     });
   }
 
@@ -76,12 +80,18 @@ const DesignImage = () => {
               return (
                 <div key={`post_${index}`} className="mx-auto zoom-out-75">
                   <div ref={addToElementRef}>
-                    <Wisdom4
+                    {/* <Wisdom1
                       quote={post.quote}
                       author={post.author}
                       imageURL={post.image}
                       socialHandle={WETHESAPIENS.socialHandle}
-                      mainContentPadding="px-6"
+                      mainContentPadding="px-8"
+                    /> */}
+
+                    <ThumbnailIGTV3
+                      quote="Art of War"
+                      subQuote="Chapter 4"
+                      imageURL="https://pbs.twimg.com/media/Eu-1XoxUcAMhhsb.jpg"
                     />
                   </div>
                 </div>

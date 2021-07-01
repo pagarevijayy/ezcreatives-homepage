@@ -8,9 +8,12 @@
 - Request for custom template (I create templates for now, later user generated.)
 - Free trial: 15 images per month based on limited templates.
 - Pricing:
-  - Basic: $25/mo ($250/yr) [limits: 1,000 images, setup + basic support]
-  - Pro: $65/mo ($650/yr) [limits: 10,000 images, special templates , setup + premium support ]
-  - Business: $165/mo ($1650/yr) [limits: 50,000 images, special + 5 custom templates , setup + advanced support]
+  - Basic: $25/mo ($250/yr)
+    - 1,000 images, unlimited templates, setup hand-holding, basic support
+  - Pro: $65/mo ($650/yr)
+    - 10,000 images, unlimited templates, special templates , setup + premium support
+  - Business: $165/mo ($1650/yr)
+    - 50,000 images, API access, unlimited templates, special templates , 5 custom templates, setup hand-holding, advanced support, dedicated expert (RM), (we manage the account for you)
   - Contact us for custom plans
 
 ---

@@ -55,10 +55,10 @@ export default function Home() {
         <Menubar />
         <Container>
           <section className="hero-section text-center">
-            <h1 className="mt-12 sm:mt-20 text-3xl sm:text-5xl md:mx-auto md:max-w-screen-sm font-poppins font-bold tracking-wide">
+            <h1 className="mt-12 sm:mt-20 sm:mx-auto sm:max-w-md md:max-w-lg text-3xl sm:text-4xl font-poppins font-bold tracking-wide">
               {PROJECT_PUNCHLINE}
             </h1>
-            <p className="mt-8 px-2  sm:mx-auto sm:max-w-lg md:max-w-screen-sm text-md md:text-2xl font-poppins">
+            <p className="mt-8 px-2 sm:mx-auto sm:max-w-lg md:max-w-xl text-md md:text-lg font-poppins">
               {PROJECT_DESCRIPTION}
             </p>
             <div className="pt-8 lg:pt-12 lg:text-lg">

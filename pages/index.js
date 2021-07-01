@@ -55,10 +55,10 @@ export default function Home() {
         <Menubar />
         <Container>
           <section className="hero-section text-center">
-            <h1 className="mt-12 text-3xl sm:text-5xl md:max-w-screen-sm md:mx-auto font-poppins font-bold tracking-wide">
+            <h1 className="mt-12 sm:mt-20 text-3xl sm:text-5xl md:mx-auto md:max-w-screen-sm font-poppins font-bold tracking-wide">
               {PROJECT_PUNCHLINE}
             </h1>
-            <p className="mt-8 px-2 text-md md:text-2xl md:max-w-screen-sm md:mx-auto font-poppins">
+            <p className="mt-8 px-2  sm:mx-auto sm:max-w-lg md:max-w-screen-sm text-md md:text-2xl font-poppins">
               {PROJECT_DESCRIPTION}
             </p>
             <div className="pt-8 lg:pt-12 lg:text-lg">
@@ -68,10 +68,10 @@ export default function Home() {
                 </button>
               </Link>
             </div>
-            <p className="mt-8 text-gray-600 text-xs">
+            <p className="mt-8 sm:mt-12 text-gray-600 text-xs">
               Live Instagram Samples Shown Below
             </p>
-            <div className="py-6 md:hidden">
+            <div className="py-6 sm:max-w-sm sm:mx-auto">
               <Swiper
                 slidesPerView={"auto"}
                 spaceBetween={30}
@@ -120,19 +120,16 @@ export default function Home() {
                 </SwiperSlide>
               </Swiper>
             </div>
-            {/* <p className="bg-gradient-to-r from-cyan-500 to-cyan-600 inline decoration-clone text-xl leading-relaxed text-gray-50 font-poppins italic font-medium px-2">
-              Sample Auto-Generated Instagram Feed
-            </p> */}
           </section>
-          <section className="mt-8 text-center">
-            <h2 className="text-xl font-medium px-2 max-w-xs mx-auto">
+          <section className="mt-12 text-center">
+            <h2 className="text-xl sm:text-2xl font-medium px-2 max-w-xs sm:max-w-sm mx-auto">
               Focus on the actual content, leave images on us!
             </h2>
-            <p className="mt-6 px-4">
+            <p className="mt-6 px-4 sm:max-w-lg sm:mx-auto">
               Our mission is to help content creators and digital marketers
               scale their businesses using our automation suite
             </p>
-            <h2 className="mt-12 text-3xl font-medium">How can we help?</h2>
+            <h2 className="mt-8 text-3xl font-medium">How can we help?</h2>
             <ul className="mt-6 space-y-2 uppercase text-xs font-semibold ">
               <li>
                 <div className="inline-flex items-center text-cyan-600 px-3 py-1.5 bg-cyan-100 rounded-3xl mx-auto">
@@ -169,17 +166,17 @@ export default function Home() {
             </ul>
           </section>
           <section className="mt-12 text-center">
-            <h2 className="text-xl font-medium">
+            <h2 className="text-xl sm:text-2xl font-medium sm:mx-auto sm:max-w-sm">
               For creators, digital marketers, and social media managers!
             </h2>
-            <p className="mt-6">
+            <p className="mt-6 sm:mx-auto sm:max-w-md">
               Up your social media game with our design templates. Shoot fast,
               Publish faster.
             </p>
             <p className="mt-8 text-gray-600 text-xs">
               Youtube Thumbnail Samples Shown Below
             </p>
-            <div className="py-6 ">
+            <div className="py-6 sm:mx-auto sm:max-w-lg">
               <Swiper
                 slidesPerView={"auto"}
                 spaceBetween={30}
@@ -230,17 +227,17 @@ export default function Home() {
             </div>
           </section>
           <section className="mt-8 text-center">
-            <h2 className="text-xl font-medium px-2">
+            <h2 className="text-xl sm:text-2xl font-medium px-2">
               Leverage Trends like a Boss
             </h2>
-            <p className="mt-6">
+            <p className="mt-6 sm:mx-auto sm:max-w-md">
               Get your content up and running quickly. Don't miss on trending
               opportunities.
             </p>
             <p className="mt-8 text-gray-600 text-xs">
               IGTV and Reels Thumbnail Samples Below
             </p>
-            <div className="py-6">
+            <div className="py-6 sm:mx-auto sm:max-w-sm">
               <Swiper
                 slidesPerView={"auto"}
                 spaceBetween={30}
@@ -283,7 +280,7 @@ export default function Home() {
             <div>
               <Link href="/templates">
                 <button className="w-64 md:w-auto px-4 py-2 text-cyan-600 font-medium focus:outline-none border border-cyan-500 rounded-3xl">
-                  Checkout Templates Gallery
+                  Checkout Template Gallery
                 </button>
               </Link>
             </div>

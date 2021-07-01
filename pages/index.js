@@ -122,14 +122,16 @@ export default function Home() {
             </div>
           </section>
           <section className="mt-6 sm:mt-12 text-center lg:grid lg:grid-cols-2">
-            <div className="flex flex-col items-start justify-center lg:text-left">
-              <h2 className="text-xl sm:text-2xl font-medium px-2 lg:px-0 max-w-xs sm:max-w-sm mx-auto lg:mx-16">
-                Focus on the actual content, leave images on us!
-              </h2>
-              <p className="mt-6 px-4 lg:px-0 sm:max-w-lg lg:max-w-sm sm:mx-auto lg:mx-16">
-                Our mission is to help content creators and digital marketers
-                scale their businesses using our automation suite
-              </p>
+            <div className="flex flex-col items-center justify-center lg:text-left">
+              <div>
+                <h2 className="text-xl sm:text-2xl font-medium px-2 lg:px-0 max-w-xs sm:max-w-sm mx-auto lg:mx-16">
+                  Focus on the actual content, leave images on us!
+                </h2>
+                <p className="mt-6 px-4 lg:px-0 sm:max-w-lg lg:max-w-sm sm:mx-auto lg:mx-16">
+                  Our mission is to help content creators and digital marketers
+                  scale their businesses using our automation suite
+                </p>
+              </div>
             </div>
             <div>
               <h2 className="mt-8 lg:mt-0 text-3xl font-medium">
@@ -174,19 +176,21 @@ export default function Home() {
           </section>
           <section className="mt-12 text-center lg:text-left lg:grid lg:grid-cols-2 lg:invert-direction">
             <div
-              className="flex flex-col items-start justify-center"
+              className="flex flex-col items-center justify-center"
               style={{ direction: "ltr" }}
             >
-              <h2 className="text-xl sm:text-2xl font-medium sm:mx-auto lg:mx-16  sm:max-w-sm">
-                For creators, digital marketers, and social media managers!
-              </h2>
-              <p className="mt-6 sm:mx-auto  lg:mx-16 sm:max-w-md lg:max-w-sm">
-                Up your social media game with our design templates. Shoot fast,
-                Publish faster.
-              </p>
-              <p className="hidden lg:block mt-8 text-gray-600 text-xs sm:mx-auto lg:mx-16  sm:max-w-md">
-                Youtube Thumbnail Samples in the Left
-              </p>
+              <div>
+                <h2 className="text-xl sm:text-2xl font-medium sm:mx-auto lg:mx-16  sm:max-w-sm">
+                  For creators, digital marketers, and social media managers!
+                </h2>
+                <p className="mt-6 sm:mx-auto  lg:mx-16 sm:max-w-md lg:max-w-sm">
+                  Up your social media game with our design templates. Shoot
+                  fast, Publish faster.
+                </p>
+                <p className="hidden lg:block mt-8 text-gray-600 text-xs sm:mx-auto lg:mx-16  sm:max-w-md">
+                  Youtube Thumbnail Samples in the Left
+                </p>
+              </div>
             </div>
             <div>
               <p className="mt-8 text-gray-600 text-xs lg:hidden">
@@ -244,17 +248,19 @@ export default function Home() {
             </div>
           </section>
           <section className="mt-8 text-center lg:text-left lg:grid lg:grid-cols-2">
-            <div className="flex flex-col items-start justify-center">
-              <h2 className="text-xl sm:text-2xl font-medium px-2 lg:px-0 mx-auto lg:mx-16">
-                Leverage Trends like a Boss
-              </h2>
-              <p className="mt-6 sm:mx-auto sm:max-w-md lg:mx-16">
-                Get your content up and running quickly. Don't miss on trending
-                opportunities.
-              </p>
-              <p className="hidden lg:block mt-8 text-gray-600 text-xs sm:mx-auto lg:mx-16 sm:max-w-md">
-                IGTV and Reel Thumbnail Samples in the Right
-              </p>
+            <div className="flex flex-col items-center justify-center">
+              <div>
+                <h2 className="text-xl sm:text-2xl font-medium px-2 lg:px-0 mx-auto lg:mx-16">
+                  Leverage Trends like a Boss
+                </h2>
+                <p className="mt-6 sm:mx-auto sm:max-w-md lg:mx-16">
+                  Get your content up and running quickly. Don't miss on
+                  trending opportunities.
+                </p>
+                <p className="hidden lg:block mt-8 text-gray-600 text-xs sm:mx-auto lg:mx-16 sm:max-w-md">
+                  IGTV and Reel Thumbnail Samples in the Right
+                </p>
+              </div>
             </div>
             <div>
               <p className="mt-8 text-gray-600 text-xs lg:hidden">
@@ -318,8 +324,8 @@ export default function Home() {
             {/* <p className="mt-4 text-gray-500 text-sm">
               FREE 15 images per month, Cheers! :)
             </p> */}
-            <div className="mt-8">
-              <div className="p-8 border border-gray-300 rounded-xl max-w-xs mx-auto">
+            <div className="mt-8 lg:grid lg:grid-cols-3 lg:gap-4 space-y-6 lg:space-y-0 max-w-screen-lg mx-auto">
+              <div className="p-8 border border-gray-300 rounded-xl max-w-xs mx-auto w-full">
                 <h3 className="text-xl font-medium">Basic</h3>
                 <p className="mt-4 text-gray-500">
                   <span className="text-gray-800 text-2xl font-semibold">
@@ -358,7 +364,10 @@ export default function Home() {
                   </li>
                 </ul>
               </div>
-              <div className=" mt-6 p-8 border border-gray-300 rounded-xl max-w-xs mx-auto">
+              <div className="p-8 border border-gray-300 rounded-xl max-w-xs mx-auto w-full">
+                {/* <p className="text-xs text-cyan-700 font-medium -mt-5 pb-1">
+                  Recommended
+                </p> */}
                 <h3 className="text-xl font-medium">Pro</h3>
                 <p className="mt-4 text-gray-500">
                   <span className="text-gray-800 text-2xl font-semibold">
@@ -397,7 +406,7 @@ export default function Home() {
                   </li>
                 </ul>
               </div>
-              <div className="mt-6 p-8 border border-gray-300 rounded-xl max-w-xs mx-auto">
+              <div className="p-8 border border-gray-300 rounded-xl max-w-xs mx-auto w-full">
                 <h3 className="text-xl font-medium">Business Pro </h3>
                 <p className="mt-4 text-gray-500">
                   <span className="text-gray-800 text-2xl font-semibold">
@@ -444,18 +453,20 @@ export default function Home() {
                   </li>
                 </ul>
               </div>
-              <p className="mt-4 text-xs">
-                Want something custom?
-                <Link href="/somewhere">
-                  <a className="px-1 underline text-cyan-600 hover:text-cyan-800 visited:text-purple-600">
-                    Get in touch!
-                  </a>
-                </Link>
-              </p>
             </div>
+            <p className="mt-6 text-xs lg:text-sm">
+              Want something custom?
+              <Link href="/somewhere">
+                <a className="px-1 underline text-cyan-600 hover:text-cyan-800 visited:text-purple-600">
+                  Get in touch!
+                </a>
+              </Link>
+            </p>
           </section>
-          <section className="mt-12 text-center">
-            <h2 className="text-xl font-medium">Ready to Automate?</h2>
+          <section className="mt-16 text-center">
+            <h2 className="text-xl lg:text-xl font-medium">
+              Ready to Automate?
+            </h2>
             <div className="mt-4 text-sm">
               <Link href="/something">
                 <button className="w-48 px-3 py-2.5 font-medium focus:outline-none border border-cyan-500 rounded-3xl">

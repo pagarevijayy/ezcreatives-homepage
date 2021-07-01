@@ -243,65 +243,72 @@ export default function Home() {
               </div>
             </div>
           </section>
-          <section className="mt-8 text-center">
-            <h2 className="text-xl sm:text-2xl font-medium px-2">
-              Leverage Trends like a Boss
-            </h2>
-            <p className="mt-6 sm:mx-auto sm:max-w-md">
-              Get your content up and running quickly. Don't miss on trending
-              opportunities.
-            </p>
-            <p className="mt-8 text-gray-600 text-xs">
-              IGTV and Reels Thumbnail Samples Below
-            </p>
-            <div className="py-6 sm:mx-auto sm:max-w-sm">
-              <Swiper
-                slidesPerView={"auto"}
-                spaceBetween={30}
-                centeredSlides={true}
-                autoplay={{
-                  delay: 4000,
-                  disableOnInteraction: false,
-                }}
-                pagination={{ clickable: true }}
-              >
-                <SwiperSlide>
-                  <img
-                    className="rounded-lg"
-                    src="/images/ThumbnailIGTV3.png"
-                    alt="Automatically created IGTV and Reel thumbnails"
-                    height="320px"
-                    width="195px"
-                  />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <img
-                    className="rounded-lg"
-                    src="/images/ThumbnailIGTV1.png"
-                    alt="Automatically created IGTV and Reel thumbnails"
-                    height="320px"
-                    width="195px"
-                  />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <img
-                    className="rounded-lg"
-                    src="/images/ThumbnailIGTV2.png"
-                    alt="Automatically created IGTV and Reel thumbnails"
-                    height="320px"
-                    width="195px"
-                  />
-                </SwiperSlide>
-              </Swiper>
+          <section className="mt-8 text-center lg:text-left lg:grid lg:grid-cols-2">
+            <div className="flex flex-col items-start justify-center">
+              <h2 className="text-xl sm:text-2xl font-medium px-2 lg:px-0 mx-auto lg:mx-16">
+                Leverage Trends like a Boss
+              </h2>
+              <p className="mt-6 sm:mx-auto sm:max-w-md lg:mx-16">
+                Get your content up and running quickly. Don't miss on trending
+                opportunities.
+              </p>
+              <p className="hidden lg:block mt-8 text-gray-600 text-xs sm:mx-auto lg:mx-16 sm:max-w-md">
+                IGTV and Reel Thumbnail Samples in the Right
+              </p>
             </div>
             <div>
-              <Link href="/templates">
-                <button className="w-64 md:w-auto px-4 py-2 text-cyan-600 font-medium focus:outline-none border border-cyan-500 rounded-3xl">
-                  Checkout Template Gallery
-                </button>
-              </Link>
+              <p className="mt-8 text-gray-600 text-xs lg:hidden">
+                IGTV and Reel Thumbnail Samples Below
+              </p>
+              <div className="py-6 sm:mx-auto sm:max-w-sm lg:max-w-xs">
+                <Swiper
+                  slidesPerView={"auto"}
+                  spaceBetween={30}
+                  centeredSlides={true}
+                  autoplay={{
+                    delay: 4000,
+                    disableOnInteraction: false,
+                  }}
+                  pagination={{ clickable: true }}
+                >
+                  <SwiperSlide>
+                    <img
+                      className="rounded-lg"
+                      src="/images/ThumbnailIGTV3.png"
+                      alt="Automatically created IGTV and Reel thumbnails"
+                      height="320px"
+                      width="195px"
+                    />
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <img
+                      className="rounded-lg"
+                      src="/images/ThumbnailIGTV1.png"
+                      alt="Automatically created IGTV and Reel thumbnails"
+                      height="320px"
+                      width="195px"
+                    />
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <img
+                      className="rounded-lg"
+                      src="/images/ThumbnailIGTV2.png"
+                      alt="Automatically created IGTV and Reel thumbnails"
+                      height="320px"
+                      width="195px"
+                    />
+                  </SwiperSlide>
+                </Swiper>
+              </div>
             </div>
           </section>
+          <div className="text-center mt-4">
+            <Link href="/templates">
+              <button className="w-64 md:w-auto px-4 py-2 text-cyan-600 font-medium focus:outline-none border border-cyan-500 rounded-3xl">
+                Checkout Template Gallery
+              </button>
+            </Link>
+          </div>
           <section
             id="pricing"
             className="mt-12 text-center"

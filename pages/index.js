@@ -55,7 +55,7 @@ export default function Home() {
         <Menubar />
         <Container>
           <section className="hero-section text-center">
-            <h1 className="mt-12 sm:mt-20 sm:mx-auto sm:max-w-md md:max-w-lg text-3xl sm:text-4xl font-poppins font-bold tracking-wide">
+            <h1 className="mt-12 sm:mt-20 mx-auto max-w-xs sm:max-w-md md:max-w-lg text-2xl sm:text-4xl font-poppins font-bold tracking-wide">
               {PROJECT_PUNCHLINE}
             </h1>
             <p className="mt-8 px-2 sm:mx-auto sm:max-w-lg md:max-w-xl text-md md:text-lg font-poppins">
@@ -121,7 +121,7 @@ export default function Home() {
               </Swiper>
             </div>
           </section>
-          <section className="mt-12 text-center">
+          <section className="mt-6 sm:mt-12 text-center">
             <h2 className="text-xl sm:text-2xl font-medium px-2 max-w-xs sm:max-w-sm mx-auto">
               Focus on the actual content, leave images on us!
             </h2>

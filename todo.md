@@ -35,3 +35,16 @@
   - [ ] create a 'copy to clip board' button (quote, caption, name, hashtag)
 
 #### TO DO
+
+1. Implement modal cta
+2. Connect modal input to google sheets
+3. Add Google Sheets section
+4. Add templates page
+
+---
+
+Google Sheets Integration
+icon -> icon
+
+Bulk Images in just a Single Click!
+Connect swiftly to google sheets and produce images in bulk. Campaign like never before.

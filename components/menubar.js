@@ -11,7 +11,7 @@ const Menubar = () => {
   const menuItems = [...MENU_OPTIONS];
 
   const brandLogo = (
-    <p className="cursor-pointer">
+    <p className="cursor-pointer transform transition hover:-translate-y-0.5">
       {" "}
       ez <span className="text-cyan-500 uppercase">CREATIVES</span>
     </p>
@@ -54,7 +54,10 @@ const Menubar = () => {
   const getPremiumButton = (
     <li className="text-center md:pl-2">
       <Link href="/">
-        <button className="w-full md:w-auto px-4 py-2  focus:outline-none border border-cyan-500 rounded-3xl">
+        <button
+          className="w-full md:w-auto px-5 py-2  focus:outline-none border border-cyan-500 rounded-3xl text-cyan-600 
+        hover:text-cyan-500 active:text-cyan-700 transform transition hover:-translate-y-0.5 focus:ring-2 focus:ring-offset-2 focus:ring-cyan-500"
+        >
           {" "}
           Request Access{" "}
         </button>
@@ -76,7 +79,9 @@ const Menubar = () => {
                   return (
                     <li key={item.title + `${index}`}>
                       <Link href={item.route}>
-                        <a>{item.title}</a>
+                        <a className="focus:outline-none focus:ring-1 focus:ring-offset-2 focus:ring-cyan-500 hover:text-cyan-500">
+                          {item.title}
+                        </a>
                       </Link>
                     </li>
                   );

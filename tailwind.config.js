@@ -2,7 +2,7 @@ const { spacing, fontFamily } = require("tailwindcss/defaultTheme");
 const colors = require("tailwindcss/colors");
 
 module.exports = {
-  // mode: "jit",
+  mode: "jit",
   purge: [
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
@@ -22,7 +22,10 @@ module.exports = {
     },
   },
   variants: {
-    extend: {},
+    extend: {
+      // backgroundColor: ["active"],
+      // textColor: ["active"],
+    },
   },
   plugins: [],
 };

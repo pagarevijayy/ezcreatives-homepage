@@ -61,9 +61,13 @@ export default function Home() {
             <p className="mt-8 px-2 sm:mx-auto sm:max-w-lg md:max-w-xl text-md md:text-lg font-poppins">
               {PROJECT_DESCRIPTION}
             </p>
-            <div className="pt-8 lg:pt-12 lg:text-lg">
-              <Link href="/something">
-                <button className="w-56 px-4 py-2.5 font-medium focus:outline-none text-gray-50 bg-gradient-to-tr from-cyan-300 to-cyan-500 rounded-3xl">
+            <div className="pt-8 lg:pt-12">
+              <Link href="">
+                <button
+                  className="w-56 px-4 py-2.5 focus:outline-none text-white bg-gradient-to-tr from-cyan-300 to-cyan-500
+                 rounded-3xl font-semibold text-sm shadow-md uppercase tracking-wider
+                 hover:to-cyan-400 active:to-cyan-600 transform transition hover:-translate-y-0.5 focus:ring-2 focus:ring-offset-2 focus:ring-cyan-400"
+                >
                   Request Access
                 </button>
               </Link>
@@ -71,7 +75,7 @@ export default function Home() {
             <p className="mt-8 sm:mt-12 text-gray-600 text-xs">
               Live Instagram Samples Shown Below
             </p>
-            <div className="py-6 sm:max-w-sm sm:mx-auto">
+            <div className="py-6 max-w-sm mx-auto">
               <Swiper
                 slidesPerView={"auto"}
                 spaceBetween={30}
@@ -196,7 +200,7 @@ export default function Home() {
               <p className="mt-8 text-gray-600 text-xs lg:hidden">
                 Youtube Thumbnail Samples Shown Below
               </p>
-              <div className="py-6 sm:mx-auto sm:max-w-lg">
+              <div className="py-6 mx-auto max-w-lg">
                 <Swiper
                   slidesPerView={"auto"}
                   spaceBetween={30}
@@ -266,7 +270,7 @@ export default function Home() {
               <p className="mt-8 text-gray-600 text-xs lg:hidden">
                 IGTV and Reel Thumbnail Samples Below
               </p>
-              <div className="py-6 sm:mx-auto sm:max-w-sm lg:max-w-xs">
+              <div className="py-6 mx-auto max-w-sm lg:max-w-xs">
                 <Swiper
                   slidesPerView={"auto"}
                   spaceBetween={30}
@@ -309,8 +313,11 @@ export default function Home() {
             </div>
           </section>
           <div className="text-center mt-4">
-            <Link href="/templates">
-              <button className="w-64 md:w-auto px-4 py-2 text-cyan-600 font-medium focus:outline-none border border-cyan-500 rounded-3xl">
+            <Link href="">
+              <button
+                className="w-64 md:w-auto px-4 py-2 text-cyan-600 font-medium focus:outline-none border border-cyan-500 rounded-3xl 
+              hover:text-cyan-500 active:text-cyan-600 transform transition hover:-translate-y-0.5 focus:ring-2 focus:ring-offset-2 focus:ring-cyan-500"
+              >
                 Checkout Template Gallery
               </button>
             </Link>
@@ -334,8 +341,11 @@ export default function Home() {
                   / mo
                 </p>
                 <div className="mt-4">
-                  <Link href="/something">
-                    <button className="w-48 px-4 py-2.5 font-medium focus:outline-none text-gray-50 bg-gradient-to-tr from-cyan-300 to-cyan-500 rounded-3xl">
+                  <Link href="">
+                    <button
+                      className="w-48 px-4 py-2.5 font-medium focus:outline-none text-white bg-gradient-to-tr from-cyan-300 to-cyan-500 rounded-3xl shadow-md
+                    hover:to-cyan-400 active:to-cyan-600 transform transition hover:-translate-y-0.5 focus:ring-2 focus:ring-offset-2 focus:ring-cyan-400"
+                    >
                       Get Basic
                     </button>
                   </Link>
@@ -376,8 +386,11 @@ export default function Home() {
                   / mo
                 </p>
                 <div className="mt-4">
-                  <Link href="/something">
-                    <button className="w-48 px-4 py-2.5 font-medium focus:outline-none text-gray-50 bg-gradient-to-tr from-cyan-300 to-cyan-500 rounded-3xl">
+                  <Link href="">
+                    <button
+                      className="w-48 px-4 py-2.5 font-medium focus:outline-none text-white bg-gradient-to-tr from-cyan-300 to-cyan-500 rounded-3xl shadow-md
+                     hover:to-cyan-400 active:to-cyan-600 transform transition hover:-translate-y-0.5 focus:-translate-y-0.5   ring-2 ring-offset-2 ring-cyan-400"
+                    >
                       Get Pro
                     </button>
                   </Link>
@@ -415,8 +428,11 @@ export default function Home() {
                   / mo
                 </p>
                 <div className="mt-4">
-                  <Link href="/something">
-                    <button className="w-48 px-4 py-2.5 font-medium focus:outline-none text-gray-50 bg-gradient-to-tr from-cyan-300 to-cyan-500 rounded-3xl">
+                  <Link href="">
+                    <button
+                      className="w-48 px-4 py-2.5 font-medium focus:outline-none text-white bg-gradient-to-tr from-cyan-300 to-cyan-500 rounded-3xl shadow-md
+                    hover:to-cyan-400 active:to-cyan-600 transform transition hover:-translate-y-0.5   focus:ring-2 focus:ring-offset-2 focus:ring-cyan-400"
+                    >
                       Get Business Pro
                     </button>
                   </Link>
@@ -456,8 +472,11 @@ export default function Home() {
             </div>
             <p className="mt-6 text-xs lg:text-sm">
               Want something custom?
-              <Link href="/somewhere">
-                <a className="px-1 underline text-cyan-600 hover:text-cyan-800 visited:text-purple-600">
+              <Link href="">
+                <a
+                  className="mx-2 underline text-cyan-600 hover:text-cyan-800 visited:text-purple-600 
+                focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-cyan-500"
+                >
                   Get in touch!
                 </a>
               </Link>
@@ -468,8 +487,12 @@ export default function Home() {
               Ready to Automate?
             </h2>
             <div className="mt-4 text-sm">
-              <Link href="/something">
-                <button className="w-48 px-3 py-2.5 font-medium focus:outline-none border border-cyan-500 rounded-3xl">
+              <Link href="">
+                <button
+                  className="w-48 px-3 py-2.5 font-medium focus:outline-none border border-cyan-500 rounded-3xl text-cyan-600  
+                hover:text-cyan-500 active:text-cyan-700 transform transition hover:-translate-y-0.5 
+                focus:ring-2 focus:ring-offset-2 focus:ring-cyan-500"
+                >
                   Request Access
                 </button>
               </Link>

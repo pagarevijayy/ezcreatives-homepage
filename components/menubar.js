@@ -79,7 +79,7 @@ const Menubar = () => {
                   return (
                     <li key={item.title + `${index}`}>
                       <Link href={item.route}>
-                        <a className="focus:outline-none focus:ring-1 focus:ring-offset-2 focus:ring-cyan-500">
+                        <a className="focus:outline-none focus:ring-1 focus:ring-offset-2 focus:ring-cyan-500 hover:text-cyan-500">
                           {item.title}
                         </a>
                       </Link>

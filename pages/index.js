@@ -25,8 +25,9 @@ export default function Home() {
 
   const submitEmailAddress = (values, helpers) => {
     const submittedEmail = values.email;
-    console.log("Email entered:", submittedEmail);
-    console.log("ctaSource", ctaSource);
+    setSubmittingEmail(true);
+    // console.log("Email entered:", submittedEmail);
+    // console.log("ctaSource", ctaSource);
 
     // api call
     fetch(`/api/email?email=${submittedEmail}&ctaSource=${ctaSource}`)
@@ -34,6 +35,7 @@ export default function Home() {
         return response.json();
       })
       .then((response) => {
+        setSubmittingEmail(false);
         if (!response.success) {
           setEmailStatus({
             attempt: true,
@@ -47,6 +49,7 @@ export default function Home() {
         });
       })
       .catch((error) => {
+        setSubmittingEmail(false);
         console.log(error);
         setEmailStatus({
           attempt: true,
@@ -636,9 +639,14 @@ export default function Home() {
 
                         <button
                           type="submit"
-                          className="inline-flex justify-center px-4 py-2 text-sm font-medium text-cyan-900 bg-cyan-100 border border-transparent rounded-md hover:bg-cyan-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-cyan-500"
+                          disabled={submittingEmail}
+                          className={`inline-flex justify-center px-4 py-2 text-sm font-medium text-cyan-900 bg-cyan-100 border border-transparent rounded-md hover:bg-cyan-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-cyan-500 ${
+                            submittingEmail
+                              ? "animate-pulse cursor-not-allowed"
+                              : ""
+                          }`}
                         >
-                          Submit
+                          {submittingEmail ? "Submitting..." : "Submit"}
                         </button>
                       </div>
                     </form>
@@ -661,7 +669,7 @@ export default function Home() {
                     <div className="mt-2">
                       <p className="text-sm text-gray-500">
                         You'll receive a mail within 48 hrs. Thanks for choosing
-                        us.
+                        ezCreatives.
                       </p>
                     </div>
                     <div className="mt-4">

@@ -112,7 +112,17 @@ const Menubar = ({ CTAHandler }) => {
       >
         <ul className="p-6 space-y-6 font-medium tracking-wide">
           <li onClick={toggleSidebar}>{closeIcon}</li>
-
+          <li>
+            <a
+              onClick={() => {
+                toggleSidebar();
+                CTAHandler("menuRequestDemo");
+              }}
+              className="cursor-pointer focus:outline-none focus:ring-1 focus:ring-offset-2 focus:ring-cyan-500 hover:text-cyan-500"
+            >
+              Demo
+            </a>
+          </li>
           {menuItems.map((item, index) => {
             return (
               <li

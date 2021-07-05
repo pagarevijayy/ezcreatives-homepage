@@ -2,6 +2,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Pagination, Autoplay } from "swiper";
 import { Dialog, Transition } from "@headlessui/react";
 import { useState, Fragment, useRef } from "react";
+import { useFormik } from "formik";
+import * as Yup from "yup";
 
 import Head from "next/head";
 import Link from "next/link";
@@ -14,23 +16,32 @@ SwiperCore.use([Pagination, Autoplay]);
 
 export default function Home() {
   let [isRequestAccessModalOpen, setIsRequestAccessModalOpen] = useState(false);
-  const emailAddressField = useRef(null);
+
+  const submitEmailAddress = (values, { resetForm }) => {
+    console.log("Email entered:", values.email);
+
+    // resetForm();
+    closeRequestAccessModal();
+  };
+
+  const formik = useFormik({
+    initialValues: {
+      email: "",
+    },
+    validationSchema: Yup.object({
+      email: Yup.string().email("Invalid email address"),
+    }),
+    onSubmit: submitEmailAddress,
+  });
 
   const closeRequestAccessModal = () => {
+    formik.resetForm();
     setIsRequestAccessModalOpen(false);
   };
 
   const openRequestAccessModal = (modalSource) => {
     console.log("Clicked via:", modalSource);
     setIsRequestAccessModalOpen(true);
-  };
-
-  const submitEmailAddress = () => {
-    console.log("Email entered:", emailAddressField.current.value);
-
-    /**@todo: validate email */
-
-    closeRequestAccessModal();
   };
 
   const faviconEmoji = "🚀";
@@ -565,22 +576,34 @@ export default function Home() {
                   </p>
                   {/* <p className="mt-2 text-sm text-gray-500">We won't spam.</p> */}
                 </div>
+                <form onSubmit={formik.handleSubmit}>
+                  <div className="mt-4 space-y-4">
+                    <input
+                      id="email"
+                      type="email"
+                      required
+                      className={`mt-1 block w-full rounded-md shadow-sm focus:ring focus:ring-opacity-50 ${
+                        formik.touched.email && formik.errors.email
+                          ? "border-red-500 focus:border-red-300 focus:ring-red-200"
+                          : "border-gray-300 focus:border-cyan-300 focus:ring-cyan-200"
+                      }`}
+                      placeholder="Email Address"
+                      {...formik.getFieldProps("email")}
+                    />
+                    {formik.touched.email && formik.errors.email ? (
+                      <div className="text-red-500 text-sm px-2">
+                        {formik.errors.email}
+                      </div>
+                    ) : null}
 
-                <div className="mt-4 space-y-4">
-                  <input
-                    type="email"
-                    class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-cyan-300 focus:ring focus:ring-cyan-200 focus:ring-opacity-50"
-                    placeholder="Email Address"
-                    ref={emailAddressField}
-                  />
-                  <button
-                    type="button"
-                    className="inline-flex justify-center px-4 py-2 text-sm font-medium text-cyan-900 bg-cyan-100 border border-transparent rounded-md hover:bg-cyan-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-cyan-500"
-                    onClick={submitEmailAddress}
-                  >
-                    Submit
-                  </button>
-                </div>
+                    <button
+                      type="submit"
+                      className="inline-flex justify-center px-4 py-2 text-sm font-medium text-cyan-900 bg-cyan-100 border border-transparent rounded-md hover:bg-cyan-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-cyan-500"
+                    >
+                      Submit
+                    </button>
+                  </div>
+                </form>
               </div>
             </Transition.Child>
           </div>

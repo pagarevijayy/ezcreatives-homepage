@@ -53,7 +53,5 @@ Connect swiftly to google sheets and produce images in bulk. Campaign like never
 
 ---
 
-1. get email from all CTAs
-2. Incrementally improve homepage + CTAs (main sales gonna come through cold-reach, this is tp)
-   - specific action (buy now)
-   - rest of action (access/demo)
+[] get email into google sheets, obvious test cases (ignore email feedback)
+[] deploy

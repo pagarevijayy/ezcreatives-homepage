@@ -75,7 +75,7 @@ export default function Home() {
         <link rel="icon" href={faviconHREF} />
       </Head>
       <div className="min-h-screen font-sans text-gray-800 bg-gray-100 pb-8">
-        <Menubar />
+        <Menubar CTAHandler={openRequestAccessModal} />
         <Container>
           <section className="hero-section text-center">
             <h1 className="mt-12 sm:mt-20 mx-auto max-w-xs sm:max-w-md md:max-w-lg text-2xl sm:text-4xl font-poppins font-bold tracking-wide">
@@ -163,7 +163,7 @@ export default function Home() {
               <h2 className="mt-8 lg:mt-0 text-3xl font-medium">
                 How can we help?
               </h2>
-              <ul className="mt-6 space-y-2 uppercase text-xs font-semibold ">
+              <ul className="mt-6 space-y-2 uppercase text-xs font-semibold select-none">
                 <li>
                   <div className="inline-flex items-center text-cyan-600 px-3 py-1.5 bg-cyan-100 rounded-3xl mx-auto">
                     {checkMarkIcon}{" "}

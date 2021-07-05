@@ -4,14 +4,14 @@ import { useState } from "react";
 import Container from "../layouts/container";
 import { MENU_OPTIONS } from "../constants/core";
 
-const Menubar = () => {
+const Menubar = ({ CTAHandler }) => {
   const [showSidebar, setShowSidebar] = useState(false);
   const toggleSidebar = () => setShowSidebar(!showSidebar);
 
   const menuItems = [...MENU_OPTIONS];
 
   const brandLogo = (
-    <p className="cursor-pointer transform transition hover:-translate-y-0.5">
+    <p className="cursor-pointer select-none transform transition hover:-translate-y-0.5">
       {" "}
       ez <span className="text-cyan-500 uppercase">CREATIVES</span>
     </p>
@@ -53,15 +53,14 @@ const Menubar = () => {
 
   const getPremiumButton = (
     <li className="text-center md:pl-2">
-      <Link href="/">
-        <button
-          className="w-full md:w-auto px-5 py-2  focus:outline-none border border-cyan-500 rounded-3xl text-cyan-600 
+      <button
+        onClick={() => CTAHandler("menuRequestAccess")}
+        className="w-full md:w-auto px-5 py-2  focus:outline-none border border-cyan-500 rounded-3xl text-cyan-600 
         hover:text-cyan-500 active:text-cyan-700 transform transition hover:-translate-y-0.5 focus:ring-2 focus:ring-offset-2 focus:ring-cyan-500"
-        >
-          {" "}
-          Request Access{" "}
-        </button>
-      </Link>
+      >
+        {" "}
+        Request Access{" "}
+      </button>
     </li>
   );
 
@@ -75,6 +74,14 @@ const Menubar = () => {
           <div>
             <nav className="laptop-nav hidden lg:block">
               <ul className="flex items-center space-x-6 font-medium">
+                <li>
+                  <a
+                    onClick={() => CTAHandler("menuRequestDemo")}
+                    className="cursor-pointer focus:outline-none focus:ring-1 focus:ring-offset-2 focus:ring-cyan-500 hover:text-cyan-500"
+                  >
+                    Demo
+                  </a>
+                </li>
                 {menuItems.map((item, index) => {
                   return (
                     <li key={item.title + `${index}`}>

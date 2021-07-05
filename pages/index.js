@@ -1,15 +1,38 @@
-import Head from "next/head";
-import Link from "next/link";
-import Menubar from "../components/menubar";
-import Container from "../layouts/container";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Pagination, Autoplay } from "swiper";
+import { Dialog, Transition } from "@headlessui/react";
+import { useState, Fragment, useRef } from "react";
 
+import Head from "next/head";
+import Link from "next/link";
+
+import Menubar from "../components/menubar";
+import Container from "../layouts/container";
 import { PROJECT_PUNCHLINE, PROJECT_DESCRIPTION } from "../constants/core";
 
 SwiperCore.use([Pagination, Autoplay]);
 
 export default function Home() {
+  let [isRequestAccessModalOpen, setIsRequestAccessModalOpen] = useState(false);
+  const emailAddressField = useRef(null);
+
+  const closeRequestAccessModal = () => {
+    setIsRequestAccessModalOpen(false);
+  };
+
+  const openRequestAccessModal = (modalSource) => {
+    console.log("Clicked via:", modalSource);
+    setIsRequestAccessModalOpen(true);
+  };
+
+  const submitEmailAddress = () => {
+    console.log("Email entered:", emailAddressField.current.value);
+
+    /**@todo: validate email */
+
+    closeRequestAccessModal();
+  };
+
   const faviconEmoji = "🚀";
   const faviconHREF = `data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>${faviconEmoji}</text></svg>`;
 
@@ -62,15 +85,14 @@ export default function Home() {
               {PROJECT_DESCRIPTION}
             </p>
             <div className="pt-8 lg:pt-12">
-              <Link href="">
-                <button
-                  className="w-56 px-4 py-2.5 focus:outline-none text-white bg-gradient-to-tr from-cyan-300 to-cyan-500
+              <button
+                onClick={() => openRequestAccessModal("requestAccessPrimary")}
+                className="w-56 px-4 py-2.5 focus:outline-none text-white bg-gradient-to-tr from-cyan-300 to-cyan-500
                  rounded-3xl font-semibold text-sm shadow-md uppercase tracking-wider
                  hover:to-cyan-400 active:to-cyan-600 transform transition hover:-translate-y-0.5 focus:ring-2 focus:ring-offset-2 focus:ring-cyan-400"
-                >
-                  Request Access
-                </button>
-              </Link>
+              >
+                Request Access
+              </button>
             </div>
             <p className="mt-8 sm:mt-12 text-gray-600 text-xs">
               Live Instagram Samples Shown Below
@@ -313,14 +335,13 @@ export default function Home() {
             </div>
           </section>
           <div className="text-center mt-4">
-            <Link href="">
-              <button
-                className="w-64 md:w-auto px-4 py-2 text-cyan-600 font-medium focus:outline-none border border-cyan-500 rounded-3xl 
+            <button
+              onClick={() => openRequestAccessModal("checkoutTemplateGallery")}
+              className="w-64 md:w-auto px-4 py-2 text-cyan-600 font-medium focus:outline-none border border-cyan-500 rounded-3xl 
               hover:text-cyan-500 active:text-cyan-600 transform transition hover:-translate-y-0.5 focus:ring-2 focus:ring-offset-2 focus:ring-cyan-500"
-              >
-                Checkout Template Gallery
-              </button>
-            </Link>
+            >
+              Checkout Template Gallery
+            </button>
           </div>
           <section
             id="pricing"
@@ -341,14 +362,13 @@ export default function Home() {
                   / mo
                 </p>
                 <div className="mt-4">
-                  <Link href="">
-                    <button
-                      className="w-48 px-4 py-2.5 font-medium focus:outline-none text-white bg-gradient-to-tr from-cyan-300 to-cyan-500 rounded-3xl shadow-md
+                  <button
+                    onClick={() => openRequestAccessModal("buyBasic")}
+                    className="w-48 px-4 py-2.5 font-medium focus:outline-none text-white bg-gradient-to-tr from-cyan-300 to-cyan-500 rounded-3xl shadow-md
                     hover:to-cyan-400 active:to-cyan-600 transform transition hover:-translate-y-0.5 focus:ring-2 focus:ring-offset-2 focus:ring-cyan-400"
-                    >
-                      Get Basic
-                    </button>
-                  </Link>
+                  >
+                    Get Basic
+                  </button>
                 </div>
                 <ul className="mt-6 space-y-3 text-sm">
                   <li className="flex items-center justify-center">
@@ -359,7 +379,7 @@ export default function Home() {
                   <li className="flex items-center justify-center">
                     {" "}
                     {tickMarkIcon}
-                    <span className="px-1"> Unlimited Design Template </span>
+                    <span className="px-1"> Popular Design Templates </span>
                   </li>
                   <li className="flex items-center justify-center">
                     {" "}
@@ -386,14 +406,13 @@ export default function Home() {
                   / mo
                 </p>
                 <div className="mt-4">
-                  <Link href="">
-                    <button
-                      className="w-48 px-4 py-2.5 font-medium focus:outline-none text-white bg-gradient-to-tr from-cyan-300 to-cyan-500 rounded-3xl shadow-md
+                  <button
+                    onClick={() => openRequestAccessModal("buyPro")}
+                    className="w-48 px-4 py-2.5 font-medium focus:outline-none text-white bg-gradient-to-tr from-cyan-300 to-cyan-500 rounded-3xl shadow-md
                      hover:to-cyan-400 active:to-cyan-600 transform transition hover:-translate-y-0.5 focus:-translate-y-0.5   ring-2 ring-offset-2 ring-cyan-400"
-                    >
-                      Get Pro
-                    </button>
-                  </Link>
+                  >
+                    Get Pro
+                  </button>
                 </div>
                 <ul className="mt-6 space-y-3 text-sm">
                   <li className="flex items-center justify-center">
@@ -406,6 +425,11 @@ export default function Home() {
                     {tickMarkIcon}
                     <span className="px-1"> Special Design Templates </span>
                   </li>
+                  {/* <li className="flex items-center justify-center">
+                    {" "}
+                    {tickMarkIcon}
+                    <span className="px-1"> Popular Design Templates </span>
+                  </li> */}
                   <li className="flex items-center justify-center">
                     {" "}
                     {tickMarkIcon}
@@ -428,14 +452,13 @@ export default function Home() {
                   / mo
                 </p>
                 <div className="mt-4">
-                  <Link href="">
-                    <button
-                      className="w-48 px-4 py-2.5 font-medium focus:outline-none text-white bg-gradient-to-tr from-cyan-300 to-cyan-500 rounded-3xl shadow-md
+                  <button
+                    onClick={() => openRequestAccessModal("buyBusinessPro")}
+                    className="w-48 px-4 py-2.5 font-medium focus:outline-none text-white bg-gradient-to-tr from-cyan-300 to-cyan-500 rounded-3xl shadow-md
                     hover:to-cyan-400 active:to-cyan-600 transform transition hover:-translate-y-0.5   focus:ring-2 focus:ring-offset-2 focus:ring-cyan-400"
-                    >
-                      Get Business Pro
-                    </button>
-                  </Link>
+                  >
+                    Get Business Pro
+                  </button>
                 </div>
                 <ul className="mt-6 space-y-3 text-sm">
                   <li className="flex items-center justify-center">
@@ -451,10 +474,7 @@ export default function Home() {
                   <li className="flex items-center justify-center">
                     {" "}
                     {tickMarkIcon}
-                    <span className="px-1">
-                      {" "}
-                      Special + Unlimited Templates{" "}
-                    </span>
+                    <span className="px-1"> Special + Popular Templates </span>
                   </li>
                   <li className="flex items-center justify-center">
                     {" "}
@@ -472,14 +492,13 @@ export default function Home() {
             </div>
             <p className="mt-6 text-xs lg:text-sm">
               Want something custom?
-              <Link href="">
-                <a
-                  className="mx-2 underline text-cyan-600 hover:text-cyan-800 visited:text-purple-600 
+              <a
+                onClick={() => openRequestAccessModal("buyCustomPricing")}
+                className="mx-2 underline cursor-pointer text-cyan-600 hover:text-cyan-800 visited:text-purple-600 
                 focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-cyan-500"
-                >
-                  Get in touch!
-                </a>
-              </Link>
+              >
+                Get in touch!
+              </a>
             </p>
           </section>
           <section className="mt-16 text-center">
@@ -487,15 +506,14 @@ export default function Home() {
               Ready to Automate?
             </h2>
             <div className="mt-4 text-sm">
-              <Link href="">
-                <button
-                  className="w-48 px-3 py-2.5 font-medium focus:outline-none border border-cyan-500 rounded-3xl text-cyan-600  
+              <button
+                onClick={() => openRequestAccessModal("requestAccessSecondary")}
+                className="w-48 px-3 py-2.5 font-medium focus:outline-none border border-cyan-500 rounded-3xl text-cyan-600  
                 hover:text-cyan-500 active:text-cyan-700 transform transition hover:-translate-y-0.5 
                 focus:ring-2 focus:ring-offset-2 focus:ring-cyan-500"
-                >
-                  Request Access
-                </button>
-              </Link>
+              >
+                Request Access
+              </button>
             </div>
           </section>
         </Container>
@@ -505,6 +523,69 @@ export default function Home() {
           </p>
         </footer>
       </div>
+
+      <Transition appear show={isRequestAccessModalOpen} as={Fragment}>
+        <Dialog
+          as="div"
+          className="fixed inset-0 z-10 overflow-y-auto"
+          onClose={closeRequestAccessModal}
+        >
+          <div className="min-h-screen px-4 text-center">
+            <Transition.Child as={Fragment}>
+              <Dialog.Overlay className="fixed inset-0 bg-black opacity-80" />
+            </Transition.Child>
+
+            {/* This element is to trick the browser into centering the modal contents. */}
+            <span
+              className="inline-block h-screen align-middle"
+              aria-hidden="true"
+            >
+              &#8203;
+            </span>
+            <Transition.Child
+              as={Fragment}
+              enter="ease-out duration-300"
+              enterFrom="opacity-0 scale-95"
+              enterTo="opacity-100 scale-100"
+              leave="ease-in duration-200"
+              leaveFrom="opacity-100 scale-100"
+              leaveTo="opacity-0 scale-95"
+            >
+              <div className="inline-block w-full max-w-md p-6 my-8 overflow-hidden text-left align-middle transition-all transform bg-white shadow-xl rounded-2xl">
+                <Dialog.Title
+                  as="h3"
+                  className="text-lg font-medium leading-6 text-gray-900"
+                >
+                  Let's begin our journey 🚀
+                </Dialog.Title>
+                <div className="mt-4">
+                  <p className="text-sm text-gray-500">
+                    Please enter your email so we can reach out to you with the
+                    necessary details and offers.
+                  </p>
+                  {/* <p className="mt-2 text-sm text-gray-500">We won't spam.</p> */}
+                </div>
+
+                <div className="mt-4 space-y-4">
+                  <input
+                    type="email"
+                    class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-cyan-300 focus:ring focus:ring-cyan-200 focus:ring-opacity-50"
+                    placeholder="Email Address"
+                    ref={emailAddressField}
+                  />
+                  <button
+                    type="button"
+                    className="inline-flex justify-center px-4 py-2 text-sm font-medium text-cyan-900 bg-cyan-100 border border-transparent rounded-md hover:bg-cyan-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-cyan-500"
+                    onClick={submitEmailAddress}
+                  >
+                    Submit
+                  </button>
+                </div>
+              </div>
+            </Transition.Child>
+          </div>
+        </Dialog>
+      </Transition>
     </>
   );
 }

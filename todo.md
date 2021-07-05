@@ -48,3 +48,12 @@ icon -> icon
 
 Bulk Images in just a Single Click!
 Connect swiftly to google sheets and produce images in bulk. Campaign like never before.
+
+// show alert email address successfully entered or not
+
+---
+
+1. get email from all CTAs
+2. Incrementally improve homepage + CTAs (main sales gonna come through cold-reach, this is tp)
+   - specific action (buy now)
+   - rest of action (access/demo)

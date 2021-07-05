@@ -53,5 +53,5 @@ Connect swiftly to google sheets and produce images in bulk. Campaign like never
 
 ---
 
-[] get email into google sheets, obvious test cases (ignore email feedback)
+[] hit api call
 [] deploy

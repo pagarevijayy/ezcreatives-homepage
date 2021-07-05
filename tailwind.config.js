@@ -2,7 +2,7 @@ const { fontFamily } = require("tailwindcss/defaultTheme");
 const colors = require("tailwindcss/colors");
 
 module.exports = {
-  // mode: "jit",
+  mode: "jit",
   purge: [
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
@@ -14,7 +14,6 @@ module.exports = {
       fontFamily: {
         poppins: ["Poppins", ...fontFamily.sans],
         sans: ["Inter", ...fontFamily.sans],
-        merriweather: ["Merriweather", ...fontFamily.serif],
       },
       colors: {
         cyan: colors.cyan,
@@ -22,10 +21,7 @@ module.exports = {
     },
   },
   variants: {
-    extend: {
-      // backgroundColor: ["active"],
-      // textColor: ["active"],
-    },
+    extend: {},
   },
   plugins: [require("@tailwindcss/forms")],
 };

@@ -6,7 +6,6 @@ import { useFormik } from "formik";
 import * as Yup from "yup";
 
 import Head from "next/head";
-import Link from "next/link";
 
 import Menubar from "../components/menubar";
 import Container from "../layouts/container";
@@ -123,6 +122,11 @@ export default function Home() {
           ezCreatives | Auto-generate Images from Design Templates in Bulk
         </title>
         <link rel="icon" href={faviconHREF} />
+        <meta
+          name="description"
+          content="Software tool/API to auto-generate social media images from design templates. 
+        Create banners, feed posts, and thumbnails images in bulk on a single click. For digital marketers, content creators, and social media managers."
+        />
       </Head>
       <div className="min-h-screen font-sans text-gray-800 bg-gray-100 pb-8">
         <Menubar CTAHandler={openRequestAccessModal} />

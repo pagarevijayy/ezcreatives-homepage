@@ -6,6 +6,7 @@ import { useFormik } from "formik";
 import * as Yup from "yup";
 
 import Head from "next/head";
+import * as gtag from "../lib/gtag";
 
 import Menubar from "../components/menubar";
 import Container from "../layouts/container";
@@ -80,6 +81,12 @@ export default function Home() {
     // console.log("Clicked via:", modalSource);
     setCtaSource(modalSource);
     setIsRequestAccessModalOpen(true);
+
+    gtag.event({
+      action: "clicks",
+      category: "cta",
+      label: modalSource,
+    });
   };
 
   const faviconEmoji = "🚀";

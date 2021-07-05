@@ -16,12 +16,43 @@ SwiperCore.use([Pagination, Autoplay]);
 
 export default function Home() {
   let [isRequestAccessModalOpen, setIsRequestAccessModalOpen] = useState(false);
+  const [emailStatus, setEmailStatus] = useState({
+    attempt: false,
+    success: false,
+  });
+  const [ctaSource, setCtaSource] = useState("");
+  const [submittingEmail, setSubmittingEmail] = useState(false);
 
-  const submitEmailAddress = (values, { resetForm }) => {
-    console.log("Email entered:", values.email);
+  const submitEmailAddress = (values, helpers) => {
+    const submittedEmail = values.email;
+    console.log("Email entered:", submittedEmail);
+    console.log("ctaSource", ctaSource);
 
-    // resetForm();
-    closeRequestAccessModal();
+    // api call
+    fetch(`/api/email?email=${submittedEmail}&ctaSource=${ctaSource}`)
+      .then((response) => {
+        return response.json();
+      })
+      .then((response) => {
+        if (!response.success) {
+          setEmailStatus({
+            attempt: true,
+            success: false,
+          });
+        }
+
+        setEmailStatus({
+          attempt: true,
+          success: true,
+        });
+      })
+      .catch((error) => {
+        console.log(error);
+        setEmailStatus({
+          attempt: true,
+          success: false,
+        });
+      });
   };
 
   const formik = useFormik({
@@ -35,12 +66,17 @@ export default function Home() {
   });
 
   const closeRequestAccessModal = () => {
-    formik.resetForm();
     setIsRequestAccessModalOpen(false);
+    formik.resetForm();
+    setEmailStatus({
+      attempt: false,
+      success: false,
+    });
   };
 
   const openRequestAccessModal = (modalSource) => {
-    console.log("Clicked via:", modalSource);
+    // console.log("Clicked via:", modalSource);
+    setCtaSource(modalSource);
     setIsRequestAccessModalOpen(true);
   };
 
@@ -563,47 +599,82 @@ export default function Home() {
               leaveTo="opacity-0 scale-95"
             >
               <div className="inline-block w-full max-w-md p-6 my-8 overflow-hidden text-left align-middle transition-all transform bg-white shadow-xl rounded-2xl">
-                <Dialog.Title
-                  as="h3"
-                  className="text-lg font-medium leading-6 text-gray-900"
-                >
-                  Let's begin our journey 🚀
-                </Dialog.Title>
-                <div className="mt-4">
-                  <p className="text-sm text-gray-500">
-                    Please enter your email so we can reach out to you with the
-                    necessary details and offers.
-                  </p>
-                  {/* <p className="mt-2 text-sm text-gray-500">We won't spam.</p> */}
-                </div>
-                <form onSubmit={formik.handleSubmit}>
-                  <div className="mt-4 space-y-4">
-                    <input
-                      id="email"
-                      type="email"
-                      required
-                      className={`mt-1 block w-full rounded-md shadow-sm focus:ring focus:ring-opacity-50 ${
-                        formik.touched.email && formik.errors.email
-                          ? "border-red-500 focus:border-red-300 focus:ring-red-200"
-                          : "border-gray-300 focus:border-cyan-300 focus:ring-cyan-200"
-                      }`}
-                      placeholder="Email Address"
-                      {...formik.getFieldProps("email")}
-                    />
-                    {formik.touched.email && formik.errors.email ? (
-                      <div className="text-red-500 text-sm px-2">
-                        {formik.errors.email}
-                      </div>
-                    ) : null}
-
-                    <button
-                      type="submit"
-                      className="inline-flex justify-center px-4 py-2 text-sm font-medium text-cyan-900 bg-cyan-100 border border-transparent rounded-md hover:bg-cyan-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-cyan-500"
+                {!emailStatus.success && (
+                  <div>
+                    <Dialog.Title
+                      as="h3"
+                      className="text-lg font-medium leading-6 text-gray-900"
                     >
-                      Submit
-                    </button>
+                      Let's begin our journey 🚀
+                    </Dialog.Title>
+                    <div className="mt-4">
+                      <p className="text-sm text-gray-500">
+                        Please enter your email so we can reach out to you with
+                        the necessary details and offers.
+                      </p>
+                      {/* <p className="mt-2 text-sm text-gray-500">We won't spam.</p> */}
+                    </div>
+                    <form onSubmit={formik.handleSubmit}>
+                      <div className="mt-4 space-y-4">
+                        <input
+                          id="email"
+                          type="email"
+                          required
+                          className={`mt-1 block w-full rounded-md shadow-sm focus:ring focus:ring-opacity-50 ${
+                            formik.touched.email && formik.errors.email
+                              ? "border-red-500 focus:border-red-300 focus:ring-red-200"
+                              : "border-gray-300 focus:border-cyan-300 focus:ring-cyan-200"
+                          }`}
+                          placeholder="Email Address"
+                          {...formik.getFieldProps("email")}
+                        />
+                        {formik.touched.email && formik.errors.email ? (
+                          <div className="text-red-500 text-sm px-2">
+                            {formik.errors.email}
+                          </div>
+                        ) : null}
+
+                        <button
+                          type="submit"
+                          className="inline-flex justify-center px-4 py-2 text-sm font-medium text-cyan-900 bg-cyan-100 border border-transparent rounded-md hover:bg-cyan-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-cyan-500"
+                        >
+                          Submit
+                        </button>
+                      </div>
+                    </form>
+                    {emailStatus.attempt && (
+                      <div className="mt-4 text-sm text-red-500">
+                        Oops... something went wrong.
+                      </div>
+                    )}
                   </div>
-                </form>
+                )}
+
+                {emailStatus.success && (
+                  <div>
+                    <Dialog.Title
+                      as="h3"
+                      className="text-lg font-medium leading-6 text-gray-900"
+                    >
+                      Email Received 🎉
+                    </Dialog.Title>
+                    <div className="mt-2">
+                      <p className="text-sm text-gray-500">
+                        You'll receive a mail within 48 hrs. Thanks for choosing
+                        us.
+                      </p>
+                    </div>
+                    <div className="mt-4">
+                      <button
+                        onClick={closeRequestAccessModal}
+                        type="button"
+                        className="inline-flex justify-center px-4 py-2 text-sm font-medium text-cyan-900 bg-cyan-100 border border-transparent rounded-md hover:bg-cyan-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-cyan-500"
+                      >
+                        Close
+                      </button>
+                    </div>
+                  </div>
+                )}
               </div>
             </Transition.Child>
           </div>

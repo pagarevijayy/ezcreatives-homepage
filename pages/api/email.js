@@ -40,6 +40,8 @@ async function addData(sheet, email, ctaSource) {
 
 export default async function handler(req, res) {
   const googleSheetID = "1kaNaOHwDs5CF4dqj6txv3GSOQrvl-8MChUlTc-xSmm4";
+  const emailId = req.query.email;
+  const ctaSource = req.query.ctaSource;
 
   // Initialize spreadsheet
   const doc = await initSpreadsheet(googleSheetID);
@@ -50,7 +52,7 @@ export default async function handler(req, res) {
   // Do action
 
   // 1. add data to the sheet
-  const newRow = await addData(sheet, "ok@gmail.com", "primaryCTA");
+  const newRow = await addData(sheet, emailId, ctaSource);
   const newEmail = newRow.email;
   const newSource = newRow.ctaSource;
   const feedback = { email: newEmail, ctaSource: newSource };

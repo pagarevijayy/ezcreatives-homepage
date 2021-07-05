@@ -48,3 +48,10 @@ icon -> icon
 
 Bulk Images in just a Single Click!
 Connect swiftly to google sheets and produce images in bulk. Campaign like never before.
+
+// show alert email address successfully entered or not
+
+---
+
+[] hit api call
+[] deploy
